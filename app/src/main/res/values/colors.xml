@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#ff4081</color>
 
     <color name="back">#fb9c25</color>
     <color name="slide_2">#fb9c25</color>
@@ -11,8 +11,8 @@
     <color name="P2">#3F51B5</color>
 
     <color name="backgroudcolor">#1b263a</color>
-    <color name="backdark">#171F32</color>
-    <color name="green">#0DBE6D</color>
+    <color name="backdark">#171f32</color>
+    <color name="green">#0dbe6d</color>
     <color name="grey">#8A8F98</color>
 
     <color name="tutorial_buttonTextColor">#000000</color>

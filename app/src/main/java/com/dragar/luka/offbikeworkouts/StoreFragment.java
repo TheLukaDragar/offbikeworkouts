@@ -72,20 +72,20 @@ public class StoreFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_store, container, false);
-        ImageButton imageButton = (ImageButton) v.findViewById(R.id.imageButton);
-        Button button = (Button) v.findViewById(R.id.button2);
-        Button button2 = (Button) v.findViewById(R.id.button3);
+      //  ImageButton imageButton = (ImageButton) v.findViewById(R.id.imageButton);
+       // Button button = (Button) v.findViewById(R.id.button2);
+       // Button button2 = (Button) v.findViewById(R.id.button3);
 
 
 
 
 
-        imageButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        //imageButton.setOnClickListener(new View.OnClickListener() {
+        //    @Override
+         //   public void onClick(View view) {
 
-            }
-        });
+         //   }
+      //  });
 
         return v;
     }

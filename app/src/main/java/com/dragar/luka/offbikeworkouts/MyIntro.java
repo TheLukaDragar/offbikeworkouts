@@ -2,6 +2,7 @@ package com.dragar.luka.offbikeworkouts;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import com.github.paolorotolo.appintro.AppIntro;
@@ -56,4 +57,6 @@ public class MyIntro extends AppIntro {
     public void onSlideChanged() {
         // Do something here when slide is changed
     }
+
+
 }

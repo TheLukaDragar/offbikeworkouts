@@ -90,22 +90,22 @@ public class MainActivity extends AppCompatActivity {
             Fragment fragment;
             switch (item.getItemId()) {
                 case R.id.navigation_shop:
-                    toolbar1.setTitle("Shop");
+                    toolbar1.setTitle("Core Workouts");
                     fragment = new StoreFragment();
                     loadFragment(fragment);
                     return true;
                 case R.id.navigation_gifts:
-                    toolbar1.setTitle("My Gifts");
+                    toolbar1.setTitle("Streching");
                     fragment = new GiftsFragment();
                     loadFragment(fragment);
                     return true;
                 case R.id.navigation_cart:
-                    toolbar1.setTitle("Cart");
+                    toolbar1.setTitle("HIT Workouts");
                     fragment = new CartFragment();
                     loadFragment(fragment);
                     return true;
                 case R.id.navigation_profile:
-                    toolbar1.setTitle("Profile");
+                    toolbar1.setTitle("Support");
                     fragment = new ProfileFragment();
                     loadFragment(fragment);
                     return true;
@@ -128,7 +128,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void start(View view) {
 
+        Fragment fragment;
+        fragment = new ProfileFragment();
+        loadFragment(fragment);
+    }
 }
 
 

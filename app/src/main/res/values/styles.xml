@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
@@ -24,6 +24,55 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppThemeDarkAlways" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppThemeCover" parent="AppThemeDarkAlways">
+        <item name="android:background">@color/darkGrayBackground</item>
+    </style>
+
+    <style name="TimeHeadline">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">@dimen/time_headline</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif-black</item>
+        <item name="android:alpha">0.87</item>
+    </style>
+
+    <style name="CoverHeadline">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">@dimen/cover_headline</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif-black</item>
+        <item name="android:alpha">0.87</item>
+    </style>
+
+    <style name="TapIndicator">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:alpha">0.6</item>
+    </style>
+
+    <style name="SuccessHeadline">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif-black</item>
+    </style>
+
+    <style name="DescriptionText">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ListTitle_DayNight">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">16sp</item>
+    </style>
 
 
 </resources>

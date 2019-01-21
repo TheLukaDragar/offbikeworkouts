@@ -5,4 +5,10 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="appbar_padding_top">8dp</dimen>
     <dimen name="text_margin">16dp</dimen>
+
+    <dimen name="cover_headline">60dp</dimen>
+    <dimen name="time_headline">72sp</dimen>
+    <dimen name="time_headline_small">24sp</dimen>
+    <dimen name="header_height">168dp</dimen>
+    <dimen name="timeText_margin_top">24dp</dimen>
 </resources>

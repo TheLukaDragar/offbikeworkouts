@@ -1,0 +1,35 @@
+<!--
+  ~ This file is part of Feeel.
+  ~
+  ~     Feeel is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, either version 3 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     Feeel is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with Feeel.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="32dp"
+    android:height="32dp"
+    android:viewportWidth="32"
+    android:viewportHeight="32">
+  <path
+      android:pathData="M26.6,2H5L13.1002,11.9355L26.6,2Z"
+      android:fillColor="#ffffff"/>
+  <path
+      android:pathData="M26.5993,11.9354H13.0995L8.5996,21.8709L26.5993,11.9354Z"
+      android:fillColor="#FFEFA1"/>
+  <path
+      android:pathData="M8.5999,21.871L5,2L13.0999,11.9355L8.5999,21.871Z"
+      android:fillColor="#FFDD9C"/>
+  <path
+      android:pathData="M8.5999,21.871L5,2V30L8.5999,21.871Z"
+      android:fillColor="#EDCC80"/>
+</vector>

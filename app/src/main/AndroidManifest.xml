@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.dragar.luka.offbikeworkouts">
 
     <application
@@ -23,6 +24,29 @@
             android:name=".Main2Activity"
             android:label="@string/title_activity_main2"
             android:theme="@style/AppTheme"></activity>
+
+        <activity android:name="com.dragar.luka.offbikeworkouts.view.OverviewActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="com.dragar.luka.offbikeworkouts.view.CoverActivity"
+            android:parentActivityName=".view.OverviewActivity"
+            android:theme="@style/AppThemeCover"
+            tools:ignore="UnusedAttribute"/>
+
+        <activity
+            android:name="com.dragar.luka.offbikeworkouts.view.WorkoutActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".view.CoverActivity"
+            tools:ignore="UnusedAttribute"/>
+
+        <service android:name="com.dragar.luka.offbikeworkouts.presenter.WorkoutService"/>
     </application>
 
 </manifest>

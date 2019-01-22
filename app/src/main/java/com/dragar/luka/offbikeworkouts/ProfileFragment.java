@@ -1,13 +1,18 @@
 package com.dragar.luka.offbikeworkouts;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+
+import com.dragar.luka.offbikeworkouts.view.CoverActivity;
+import com.dragar.luka.offbikeworkouts.view.OverviewActivity;
 
 
 /**
@@ -27,6 +32,7 @@ public class ProfileFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+   private String workout = "1";
 
     private OnFragmentInteractionListener mListener;
 
@@ -59,14 +65,61 @@ public class ProfileFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false);
 
+
+        // Inflate the layout for this fragment
+        View v = inflater.inflate(R.layout.fragment_profile, container, false);
+        //  ImageButton imageButton = (ImageButton) v.findViewById(R.id.imageButton);
+        // Button button = (Button) v.findViewById(R.id.button2);
+        // Button button2 = (Button) v.findViewById(R.id.button3);
+        CardView prva = (CardView) v.findViewById(R.id.prva);
+        prva.setRadius(20);//RADIUS
+        // creating a CardView and assigning a value.
+
+
+        prva.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(),OverviewActivity.class);
+              //  intent.putExtra(CoverActivity.WORKOUT_KEY,workout);
+                startActivity(intent);
+
+                // do whatever you want to do on click (to launch any fragment or activity you need to put intent here.)
+            }
+        });
+        CardView druga = (CardView) v.findViewById(R.id.druga);
+       druga.setRadius(20);//RADIUS
+        // creating a CardView and assigning a value.
+
+        druga.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), OverviewActivity.class);
+                startActivity(intent);
+
+                // do whatever you want to do on click (to launch any fragment or activity you need to put intent here.)
+            }
+        });
+        CardView tretja = (CardView) v.findViewById(R.id.tretja);
+        tretja.setRadius(20);//RADIUS
+        // creating a CardView and assigning a value.
+
+       tretja.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), OverviewActivity.class);
+                startActivity(intent);
+
+                // do whatever you want to do on click (to launch any fragment or activity you need to put intent here.)
+            }
+        });
+        return v;
     }
 
     // TODO: Rename method, update argument and hook method into UI event

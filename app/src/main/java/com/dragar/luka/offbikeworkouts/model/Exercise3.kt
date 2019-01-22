@@ -23,51 +23,28 @@ import android.os.Parcelable
 /**
 @author Miroslav Mazel
  */
-class Workout(val titleResource: Int,
-              val titleResource2: Int,
-              val img: Int,
-              val customColor: Long,
-              val exerciseMetas: Array<ExerciseMeta>,
-              val breakLength: Int) : Parcelable {
-
-
-    /**
-     * customColor encoded as (A & 0xff) << 24 | (R & 0xff) << 16 | (G & 0xff) << 8 | (B & 0xff), can reference with e.g. 0xff0000ff
-     */
-
-    val size: Int
-        get() = exerciseMetas.size
-
+data class Exercise3(val titleResource: Int, val imageResource: Int, val descResource: Int) : Parcelable {
     constructor(parcel: Parcel) : this(
-
-
             parcel.readInt(),
             parcel.readInt(),
-            parcel.readInt(),
-            parcel.readLong(),
-            parcel.createTypedArray(ExerciseMeta),
             parcel.readInt())
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
-
         parcel.writeInt(titleResource)
-        parcel.writeInt(titleResource2)
-        parcel.writeInt(img)
-        parcel.writeLong(customColor)
-        parcel.writeTypedArray(exerciseMetas, flags)
-        parcel.writeInt(breakLength)
+        parcel.writeInt(imageResource)
+        parcel.writeInt(descResource)
     }
 
     override fun describeContents(): Int {
         return 0
     }
 
-    companion object CREATOR : Parcelable.Creator<Workout> {
-        override fun createFromParcel(parcel: Parcel): Workout {
-            return Workout(parcel)
+    companion object CREATOR : Parcelable.Creator<Exercise3> {
+        override fun createFromParcel(parcel: Parcel): Exercise3 {
+            return Exercise3(parcel)
         }
 
-        override fun newArray(size: Int): Array<Workout?> {
+        override fun newArray(size: Int): Array<Exercise3?> {
             return arrayOfNulls(size)
         }
     }

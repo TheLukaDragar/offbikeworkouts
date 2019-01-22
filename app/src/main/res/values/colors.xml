@@ -17,7 +17,7 @@
 
     <color name="tutorial_buttonTextColor">#000000</color>
 
-    <color name="darkGrayBackground">#2C2C2C</color>
+    <color name="darkGrayBackground">#2c2c2c</color>
 
     <!-- NIGHT/DAY -->
     <color name="text">#000000</color>

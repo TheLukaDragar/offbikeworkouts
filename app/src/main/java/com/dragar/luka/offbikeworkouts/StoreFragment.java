@@ -17,6 +17,8 @@ import android.widget.ScrollView;
 
 import com.dragar.luka.offbikeworkouts.view.CoverActivity;
 import com.dragar.luka.offbikeworkouts.view.OverviewActivity;
+import com.dragar.luka.offbikeworkouts.view.OverviewActivity2;
+import com.dragar.luka.offbikeworkouts.view.OverviewActivity3;
 
 
 /**
@@ -81,19 +83,58 @@ public class StoreFragment extends Fragment {
       //  ImageButton imageButton = (ImageButton) v.findViewById(R.id.imageButton);
        // Button button = (Button) v.findViewById(R.id.button2);
        // Button button2 = (Button) v.findViewById(R.id.button3);
-        CardView card_view3 = (CardView) v.findViewById(R.id.card_view3);
-        card_view3.setRadius(20);//RADIUS
+        CardView card_view = (CardView) v.findViewById(R.id.card_view);
+        card_view.setRadius(20);//RADIUS
        // creating a CardView and assigning a value.
 
-        card_view3.setOnClickListener(new View.OnClickListener() {
+        card_view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
                 Intent intent = new Intent(getActivity(),OverviewActivity.class);
+
                 startActivity(intent);
+
+
 
                 // do whatever you want to do on click (to launch any fragment or activity you need to put intent here.)
             }
         });
+        CardView card_view2 = (CardView) v.findViewById(R.id.card_view2);
+        card_view2.setRadius(20);//RADIUS
+        // creating a CardView and assigning a value.
+
+        card_view2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                        Intent intent = new Intent(getActivity(),OverviewActivity2.class);
+                        startActivity(intent);
+
+
+                // do whatever you want to do on click (to launch any fragment or activity you need to put intent here.)
+            }
+        });
+        CardView card_view3 = (CardView) v.findViewById(R.id.card_view3);
+        card_view3.setRadius(20);//RADIUS
+        // creating a CardView and assigning a value.
+
+        card_view3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                Intent intent = new Intent(getActivity(),OverviewActivity3.class);
+                startActivity(intent);
+
+
+                // do whatever you want to do on click (to launch any fragment or activity you need to put intent here.)
+            }
+        });
+
+
 
 
 

@@ -23,7 +23,7 @@ import android.os.Parcelable
 /**
 @author Miroslav Mazel
  */
-data class Exercise(val titleResource: Int, val imageResource: Int, val descResource: Int) : Parcelable {
+data class Exercise(val titleResource: Int,  val imageResource: Int, val descResource: Int) : Parcelable {
     constructor(parcel: Parcel) : this(
             parcel.readInt(),
             parcel.readInt(),

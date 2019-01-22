@@ -16,22 +16,49 @@
   ~     along with Feeel.  If not, see <https://www.gnu.org/licenses/>.
   -->
 
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="?android:attr/selectableItemBackground"
-    tools:ignore="Overdraw">
+    android:layout_height="100dp"
+    android:layout_margin="16dp"
+    android:background="@drawable/itemmms"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+        android:maxLines="3"
+        android:padding="8dp"
+        android:text="TEST"
+        android:textColor="@android:color/background_light"
+        android:textSize="14dp" />
 
     <TextView
         android:id="@+id/title"
-        style="@style/ListTitle_DayNight"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-</android.support.constraint.ConstraintLayout>
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:paddingLeft="10sp"
+        android:paddingTop="5sp"
+        android:text="DESCRIPTION"
+        android:textColor="@android:color/background_light" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/color_a"
+        app:srcCompat="@drawable/color_a" />
+
+
+</RelativeLayout>

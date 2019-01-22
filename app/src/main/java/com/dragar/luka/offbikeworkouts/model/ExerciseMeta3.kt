@@ -23,51 +23,28 @@ import android.os.Parcelable
 /**
 @author Miroslav Mazel
  */
-class Workout(val titleResource: Int,
-              val titleResource2: Int,
-              val img: Int,
-              val customColor: Long,
-              val exerciseMetas: Array<ExerciseMeta>,
-              val breakLength: Int) : Parcelable {
-
-
-    /**
-     * customColor encoded as (A & 0xff) << 24 | (R & 0xff) << 16 | (G & 0xff) << 8 | (B & 0xff), can reference with e.g. 0xff0000ff
-     */
-
-    val size: Int
-        get() = exerciseMetas.size
-
+class ExerciseMeta3(val exercise: Exercise, val duration: Int, val isFlipped: Boolean = false) : Parcelable {
     constructor(parcel: Parcel) : this(
-
-
+            parcel.readParcelable(Exercise::class.java.classLoader),
             parcel.readInt(),
-            parcel.readInt(),
-            parcel.readInt(),
-            parcel.readLong(),
-            parcel.createTypedArray(ExerciseMeta),
-            parcel.readInt())
+            parcel.readByte() != 0.toByte())
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
-
-        parcel.writeInt(titleResource)
-        parcel.writeInt(titleResource2)
-        parcel.writeInt(img)
-        parcel.writeLong(customColor)
-        parcel.writeTypedArray(exerciseMetas, flags)
-        parcel.writeInt(breakLength)
+        parcel.writeParcelable(exercise, flags)
+        parcel.writeInt(duration)
+        parcel.writeByte(if (isFlipped) 1 else 0)
     }
 
     override fun describeContents(): Int {
         return 0
     }
 
-    companion object CREATOR : Parcelable.Creator<Workout> {
-        override fun createFromParcel(parcel: Parcel): Workout {
-            return Workout(parcel)
+    companion object CREATOR : Parcelable.Creator<ExerciseMeta3> {
+        override fun createFromParcel(parcel: Parcel): ExerciseMeta3 {
+            return ExerciseMeta3(parcel)
         }
 
-        override fun newArray(size: Int): Array<Workout?> {
+        override fun newArray(size: Int): Array<ExerciseMeta3?> {
             return arrayOfNulls(size)
         }
     }

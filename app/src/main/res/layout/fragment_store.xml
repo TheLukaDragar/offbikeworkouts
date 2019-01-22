@@ -29,8 +29,6 @@
             android:layout_width="match_parent"
             android:layout_height="135dp"
             android:layout_margin="8dp"
-            android:clickable="true"
-            android:focusable="true"
             >
 
             <RelativeLayout
@@ -49,9 +47,6 @@
                     android:layout_alignParentTop="true"
                     android:layout_marginTop="0dp"
 
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:onClick="start"
                     android:scaleType="centerCrop"
                     android:src="@drawable/b" />
 

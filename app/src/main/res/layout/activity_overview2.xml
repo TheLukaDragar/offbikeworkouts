@@ -18,10 +18,9 @@
 
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroudcolor">
+    android:background="@color/colorAccent">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/mainT"
@@ -40,9 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:contentDescription="@string/app_name"
-            app:srcCompat="@android:drawable/arrow_down_float"
-            tools:layout_editor_absoluteX="190dp"
-            tools:layout_editor_absoluteY="12dp" />
+            app:srcCompat="@drawable/ic_logo" />
     </android.support.v7.widget.Toolbar>
 
     <android.support.v7.widget.RecyclerView

@@ -1,12 +1,17 @@
 package com.dragar.luka.offbikeworkouts;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+
+
+import com.dragar.luka.offbikeworkouts.view.OverviewActivity3;
 
 
 /**
@@ -64,7 +69,20 @@ public class CartFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cart, container, false);
+        View v1 = inflater.inflate(R.layout.fragment_cart, container, false);
+        Button button5 = (Button) v1.findViewById(R.id.button3);
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(getActivity(),OverviewActivity3.class);
+                // intent.putExtra(OverviewActivity2.WORKOUT_KEY,workout);
+                //intent.putExtra(WorkoutActivity.TTS_KEY,0);
+                startActivity(intent);
+
+            }
+        });
+        return v1;
     }
 
     // TODO: Rename method, update argument and hook method into UI event

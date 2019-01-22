@@ -23,12 +23,12 @@ import android.os.Parcelable
 /**
 @author Miroslav Mazel
  */
-class Workout(val titleResource: Int,
-              val titleResource2: Int,
-              val img: Int,
-              val customColor: Long,
-              val exerciseMetas: Array<ExerciseMeta>,
-              val breakLength: Int) : Parcelable {
+class Workout3(val titleResource: Int,
+               val titleResource2: Int,
+               val img: Int,
+               val customColor: Long,
+               val exerciseMetas: Array<ExerciseMeta3>,
+               val breakLength: Int) : Parcelable {
 
 
     /**
@@ -45,7 +45,7 @@ class Workout(val titleResource: Int,
             parcel.readInt(),
             parcel.readInt(),
             parcel.readLong(),
-            parcel.createTypedArray(ExerciseMeta),
+            parcel.createTypedArray(ExerciseMeta3),
             parcel.readInt())
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
@@ -62,12 +62,12 @@ class Workout(val titleResource: Int,
         return 0
     }
 
-    companion object CREATOR : Parcelable.Creator<Workout> {
-        override fun createFromParcel(parcel: Parcel): Workout {
-            return Workout(parcel)
+    companion object CREATOR : Parcelable.Creator<Workout3> {
+        override fun createFromParcel(parcel: Parcel): Workout3 {
+            return Workout3(parcel)
         }
 
-        override fun newArray(size: Int): Array<Workout?> {
+        override fun newArray(size: Int): Array<Workout3?> {
             return arrayOfNulls(size)
         }
     }

@@ -30,29 +30,28 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.dragar.luka.offbikeworkouts.R
 import com.dragar.luka.offbikeworkouts.model.ExerciseMeta
-import com.dragar.luka.offbikeworkouts.model.Workout
-import com.dragar.luka.offbikeworkouts.model.WorkoutRepository
+import com.dragar.luka.offbikeworkouts.model.Workout2
+import com.dragar.luka.offbikeworkouts.model.WorkoutRepository2
 import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.activity_overview.*
+import kotlinx.android.synthetic.main.activity_overview2.*
 import java.lang.ref.WeakReference
 
 
-class OverviewActivity : AppCompatActivity() {
+class OverviewActivity2 : AppCompatActivity() {
     //todo make sure the exercise view loads back if service is in background
 
     override fun onCreate(savedInstanceState: Bundle?) { //todo connect service and preload here
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_overview)
-
+        setContentView(R.layout.activity_overview2)
 
         workoutRV.layoutManager = LinearLayoutManager(this)
-        workoutRV.adapter = WorkoutAdapter(WorkoutRepository.retrieveAll(), WeakReference(workoutRV))
+        workoutRV.adapter = WorkoutAdapter(WorkoutRepository2.retrieveAll(), WeakReference(workoutRV))
         workoutRV.addOnItemTouchListener(object: RecyclerView.SimpleOnItemTouchListener() {
 
         })
     }
 
-    internal class WorkoutAdapter(private val workouts: List<Workout>, private val recyclerView: WeakReference<RecyclerView>)
+    internal class WorkoutAdapter(private val workouts: List<Workout2>, private val recyclerView: WeakReference<RecyclerView>)
         : RecyclerView.Adapter<WorkoutAdapter.ViewHolder>() {
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -63,22 +62,19 @@ class OverviewActivity : AppCompatActivity() {
                 val recycler = recyclerView.get()
 
                 val itemPosition = recycler?.getChildAdapterPosition(view) ?: 0
-                val workout = workouts[itemPosition]
+                val workout2 = workouts[itemPosition]
 
-                val startIntent = Intent(recycler?.context, CoverActivity::class.java)
-                startIntent.putExtra(CoverActivity.WORKOUT_KEY, workout)
+                val startIntent = Intent(recycler?.context, CoverActivity2::class.java)
+                startIntent.putExtra(CoverActivity2.WORKOUT_KEY2, workout2)
                 recycler?.context?.startActivity(startIntent)
             }
             return ViewHolder(view)
         }
 
         override fun getItemCount() = workouts.size
-      //  val mojlist: IntArray = intArrayOf(10, 20, 30, 40, 50)
 
         override fun onBindViewHolder(holder: ViewHolder, position: Int) {
             holder.title.setText(workouts[position].titleResource)
-            holder.title2.setText(workouts[position].titleResource2)
-            holder.img2.setImageResource(workouts[position].img)
 
 //            holder.img.setImageResource(workouts[position].titleResource)
 
@@ -88,15 +84,12 @@ class OverviewActivity : AppCompatActivity() {
 
         internal class ViewHolder(item: View) : RecyclerView.ViewHolder(item) {
             var title = item.findViewById<View>(R.id.title) as TextView
-            var title2 = item.findViewById<View>(R.id.title2) as TextView
-            var img2 = item.findViewById<View>(R.id.imageView) as ImageView
           //  var img = item.findViewById<View>(R.id.imageView6) as ImageView
 
 
 
         }
     }
-
     //todo consider creating service here, then just passing it onto the activity created
 }
 

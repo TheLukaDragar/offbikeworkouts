@@ -11,6 +11,8 @@ import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ScrollView;
@@ -78,12 +80,17 @@ public class StoreFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_store, container, false);
-      //  ImageButton imageButton = (ImageButton) v.findViewById(R.id.imageButton);
+
+        final Animation animation5 =AnimationUtils.loadAnimation(getActivity(),R.anim.lefttoright);
+        final Animation zoom=AnimationUtils.loadAnimation(getActivity(),R.anim.zoomin);
+        ScrollView sroll = (ScrollView) v.findViewById(R.id.animateplz);
+        sroll.startAnimation(animation5);   //  ImageButton imageButton = (ImageButton) v.findViewById(R.id.imageButton);
        // Button button = (Button) v.findViewById(R.id.button2);
        // Button button2 = (Button) v.findViewById(R.id.button3);
-        CardView card_view = (CardView) v.findViewById(R.id.card_view);
+        final CardView card_view = (CardView) v.findViewById(R.id.card_view);
         card_view.setRadius(20);//RADIUS
        // creating a CardView and assigning a value.
 
@@ -93,6 +100,7 @@ public class StoreFragment extends Fragment {
 
 
                 Intent intent = new Intent(getActivity(),OverviewActivity.class);
+              //  card_view.startAnimation(zoom);
 
                 startActivity(intent);
 

@@ -44,6 +44,13 @@ class OverviewActivity3 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_overview3)
 
+        upB3.setOnClickListener {
+            finish()
+
+        }
+
+
+
 
         workoutRV.layoutManager = LinearLayoutManager(this)
         workoutRV.adapter = WorkoutAdapter(WorkoutRepository3.retrieveAll(), WeakReference(workoutRV))

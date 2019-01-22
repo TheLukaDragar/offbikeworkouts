@@ -19,6 +19,7 @@ package com.dragar.luka.offbikeworkouts.view
 
 import android.content.Intent
 import android.os.Bundle
+import android.support.v4.app.NavUtils
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
@@ -28,6 +29,7 @@ import android.view.ViewGroup
 import android.widget.ImageSwitcher
 import android.widget.ImageView
 import android.widget.TextView
+import com.dragar.luka.offbikeworkouts.MainActivity
 import com.dragar.luka.offbikeworkouts.R
 import com.dragar.luka.offbikeworkouts.model.ExerciseMeta
 import com.dragar.luka.offbikeworkouts.model.Workout
@@ -38,11 +40,19 @@ import java.lang.ref.WeakReference
 
 
 class OverviewActivity : AppCompatActivity() {
+
+
+
     //todo make sure the exercise view loads back if service is in background
 
     override fun onCreate(savedInstanceState: Bundle?) { //todo connect service and preload here
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_overview)
+
+        upB.setOnClickListener {
+           finish()
+
+        }
 
 
         workoutRV.layoutManager = LinearLayoutManager(this)
@@ -56,6 +66,7 @@ class OverviewActivity : AppCompatActivity() {
         : RecyclerView.Adapter<WorkoutAdapter.ViewHolder>() {
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+
             val view = LayoutInflater
                     .from(parent.context)
                     .inflate(R.layout.item_workout, parent, false)
@@ -76,9 +87,11 @@ class OverviewActivity : AppCompatActivity() {
       //  val mojlist: IntArray = intArrayOf(10, 20, 30, 40, 50)
 
         override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+
+
             holder.title.setText(workouts[position].titleResource)
             holder.title2.setText(workouts[position].titleResource2)
-            holder.img2.setImageResource(workouts[position].img)
+           // holder.img2.setImageResource(workouts[position].img)
 
 //            holder.img.setImageResource(workouts[position].titleResource)
 
@@ -89,13 +102,14 @@ class OverviewActivity : AppCompatActivity() {
         internal class ViewHolder(item: View) : RecyclerView.ViewHolder(item) {
             var title = item.findViewById<View>(R.id.title) as TextView
             var title2 = item.findViewById<View>(R.id.title2) as TextView
-            var img2 = item.findViewById<View>(R.id.imageView) as ImageView
+            //var img2 = item.findViewById<View>(R.id.imageView) as ImageView
           //  var img = item.findViewById<View>(R.id.imageView6) as ImageView
 
 
 
         }
     }
+
 
     //todo consider creating service here, then just passing it onto the activity created
 }

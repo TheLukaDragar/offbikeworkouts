@@ -44,6 +44,11 @@ class OverviewActivity2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_overview2)
 
+        upB.setOnClickListener {
+            finish()
+
+        }
+
         workoutRV.layoutManager = LinearLayoutManager(this)
         workoutRV.adapter = WorkoutAdapter(WorkoutRepository2.retrieveAll(), WeakReference(workoutRV))
         workoutRV.addOnItemTouchListener(object: RecyclerView.SimpleOnItemTouchListener() {

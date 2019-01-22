@@ -2,6 +2,7 @@ package com.dragar.luka.offbikeworkouts;
 
 import android.content.Context;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.dragar.luka.offbikeworkouts.view.CoverActivity;
 import com.dragar.luka.offbikeworkouts.view.OverviewActivity;
@@ -83,10 +85,20 @@ public class GiftsFragment extends Fragment {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(getActivity(),OverviewActivity.class);
+               // Intent intent = new Intent(getActivity(),OverviewActivity.class);
                 // intent.putExtra(OverviewActivity2.WORKOUT_KEY,workout);
                  //intent.putExtra(WorkoutActivity.TTS_KEY,0);
-               startActivity(intent);
+              // startActivity(intent);
+
+                MediaPlayer mediaplayer = MediaPlayer.create(getActivity(), R.raw.movie_1);//You Can Put Your File Name Instead Of abc
+                mediaplayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mediaPlayer) {
+                        mediaPlayer.reset();
+                        mediaPlayer.release();
+                    }
+                });
+                mediaplayer.start();
 
             }
         });
@@ -98,6 +110,20 @@ public class GiftsFragment extends Fragment {
 
         return v;
     }
+
+    private void showToast(String text){
+        Toast.makeText(getActivity(),text, Toast.LENGTH_SHORT).show();// this = Context
+        MediaPlayer mediaplayer = MediaPlayer.create(getActivity(), R.raw.movie_1);//You Can Put Your File Name Instead Of abc
+        mediaplayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mediaPlayer) {
+                mediaPlayer.reset();
+                mediaPlayer.release();
+            }
+        });
+        mediaplayer.start();
+    }
+
 
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {

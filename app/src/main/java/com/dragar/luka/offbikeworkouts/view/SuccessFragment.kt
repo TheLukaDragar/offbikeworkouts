@@ -24,7 +24,7 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.dragar.luka.offbikeworkouts.ADD
+
 import com.dragar.luka.offbikeworkouts.R
 import kotlinx.android.synthetic.main.fragment_success.*
 import nl.dionsegijn.konfetti.models.Shape
@@ -39,14 +39,17 @@ class SuccessFragment internal constructor() : Fragment() {
             val fragment = SuccessFragment()
             val bundle = Bundle()
             bundle.putLong(WORKOUT_COLOR, workoutColor)
+
             return fragment
         }
+
     }
 
     private var workoutColor = -1L
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         arguments?.getLong(WORKOUT_COLOR)?.let { workoutColor = it }
 
 
@@ -55,7 +58,14 @@ class SuccessFragment internal constructor() : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
 
+
+
+
+
+
         return inflater.inflate(R.layout.fragment_success, container, false)
+
+
 
 
 
@@ -64,16 +74,9 @@ class SuccessFragment internal constructor() : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        viewKonfetti.build()
-                .addColors(Color.YELLOW, Color.GREEN, Color.MAGENTA, Color.BLUE)
-                .setDirection(200.0, 359.0)
-                .setSpeed(1f, 10f)
-                .setFadeOutEnabled(true)
-                .setTimeToLive(4000L)
-                .addShapes(Shape.RECT, Shape.CIRCLE)
-                .addSizes(Size(12))
-                .setPosition(-50f, viewKonfetti.width + 50f, -50f, -50f)
-                .streamFor(1500, 2000L)
+
+
+
 
 
 
@@ -88,6 +91,19 @@ class SuccessFragment internal constructor() : Fragment() {
                 activity?.finish()
             }
         }
+    }
+
+    private fun con() {
+        viewKonfetti.build()
+                .addColors(Color.YELLOW, Color.GREEN, Color.MAGENTA, Color.BLUE)
+                .setDirection(200.0, 359.0)
+                .setSpeed(2f, 10f)
+                .setFadeOutEnabled(true)
+                .setTimeToLive(4000L)
+                .addShapes(Shape.RECT, Shape.CIRCLE)
+                .addSizes(Size(12))
+                .setPosition(-50f, viewKonfetti.width + 50f, -50f, -50f)
+                .streamFor(1500, 2000L)
     }
 
 }

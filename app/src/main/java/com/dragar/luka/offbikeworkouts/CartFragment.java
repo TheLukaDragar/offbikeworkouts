@@ -9,12 +9,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 
 import com.dragar.luka.offbikeworkouts.model.Workout;
 import com.dragar.luka.offbikeworkouts.view.CoverActivity;
 import com.dragar.luka.offbikeworkouts.view.CoverActivity3;
+import com.dragar.luka.offbikeworkouts.view.OverviewActivity;
 import com.dragar.luka.offbikeworkouts.view.OverviewActivity3;
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
 
 import java.util.List;
 
@@ -36,6 +41,8 @@ public class CartFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    private InterstitialAd mInterstitialAd;
+//   ca-app-pub-4526692710511158~5477844156
 
     private OnFragmentInteractionListener mListener;
 
@@ -75,6 +82,29 @@ public class CartFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v1 = inflater.inflate(R.layout.fragment_cart, container, false);
+
+        mInterstitialAd = new InterstitialAd(getActivity());
+
+
+        mInterstitialAd.setAdUnitId("ca-app-pub-4526692710511158/7659733486");
+        mInterstitialAd.loadAd(new AdRequest.Builder()
+               // .addTestDevice("BDD0B79D56C9AA2F03AB5BBFB78AFCC8")
+              // .addTestDevice("381A1B4E5B4A7F573A066D54374CDD5B")
+                .build());
+        mInterstitialAd.setAdListener(new AdListener() {
+            @Override
+            public void onAdClosed() {
+                // Load the next interstitial.
+                mInterstitialAd.loadAd(new AdRequest.Builder().build());
+                Intent intent = new Intent(getActivity(),OverviewActivity.class);
+                //   intent.putExtra(CoverActivity3.WORKOUT_KEY3,"2");
+                //intent.putExtra(WorkoutActivity.TTS_KEY,0);
+                startActivity(intent);
+            }
+
+        });
+
+
         Button button5 = (Button) v1.findViewById(R.id.button3);
         button5.setOnClickListener(new View.OnClickListener() {
 
@@ -83,10 +113,17 @@ public class CartFragment extends Fragment {
             @Override
             public void onClick(View view) {
 
-              //  Intent intent = new Intent(getActivity(),CoverActivity3.class);
-              //   intent.putExtra(CoverActivity3.WORKOUT_KEY3,"2");
-                //intent.putExtra(WorkoutActivity.TTS_KEY,0);
-               // startActivity(intent);
+                if (mInterstitialAd.isLoaded()) {
+                    mInterstitialAd.show();
+                } else {
+                    Toast.makeText(getActivity(), "Ad did not load", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(getActivity(),OverviewActivity.class);
+                    //   intent.putExtra(CoverActivity3.WORKOUT_KEY3,"2");
+                    //intent.putExtra(WorkoutActivity.TTS_KEY,0);
+                    startActivity(intent);
+
+                }
+
 
             }
         });

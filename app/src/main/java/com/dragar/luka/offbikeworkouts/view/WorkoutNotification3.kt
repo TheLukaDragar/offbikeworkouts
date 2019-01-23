@@ -36,7 +36,7 @@ class WorkoutNotification3(initService: Service, activityIntent: PendingIntent) 
     private val service = WeakReference<Service>(initService)
 
     companion object {
-        private const val channelID = "com.dragar.luka.offbikeworkouts.view.WorkoutNotification"
+        private const val channelID = "com.dragar.luka.offbikeworkouts.view.WorkoutNotification2"
 
         @RequiresApi(Build.VERSION_CODES.O)
         fun createNotificationChannel(notificationManager: NotificationManager, name: String, description: String) {

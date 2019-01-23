@@ -15,7 +15,7 @@
  *     along with Feeel.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.enjoyingfoss.feeel.view
+package com.dragar.luka.offbikeworkouts.view
 
 import android.annotation.TargetApi
 import android.content.Context

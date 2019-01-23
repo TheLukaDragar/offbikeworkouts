@@ -32,7 +32,7 @@ import com.dragar.luka.offbikeworkouts.model.Workout
 import com.dragar.luka.offbikeworkouts.view.WorkoutActivity
 import com.dragar.luka.offbikeworkouts.view.WorkoutChime
 import com.dragar.luka.offbikeworkouts.view.WorkoutNotification
-import com.enjoyingfoss.feeel.view.WorkoutTTS
+import com.dragar.luka.offbikeworkouts.view.WorkoutTTS
 import java.lang.ref.WeakReference
 
 /**

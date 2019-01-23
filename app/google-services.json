@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "503706127720",
+    "firebase_url": "https://offbikeworkouts.firebaseio.com",
+    "project_id": "offbikeworkouts",
+    "storage_bucket": "offbikeworkouts.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:503706127720:android:2e7af1300d8b8341",
+        "android_client_info": {
+          "package_name": "com.dragar.luka.offbikeworkouts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "503706127720-8g73nd701fi7ij354uo1almb4ilcd4k0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUtjegxT4qAoTtReB4S7X9McsrLfpIzC0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

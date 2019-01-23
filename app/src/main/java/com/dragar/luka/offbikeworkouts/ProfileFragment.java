@@ -3,16 +3,26 @@ package com.dragar.luka.offbikeworkouts;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.RelativeLayout;
+import android.widget.ScrollView;
 
 import com.dragar.luka.offbikeworkouts.view.CoverActivity;
 import com.dragar.luka.offbikeworkouts.view.OverviewActivity;
+
+import java.util.Objects;
 
 
 /**
@@ -60,6 +70,9 @@ public class ProfileFragment extends Fragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+
+
+
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
@@ -68,57 +81,67 @@ public class ProfileFragment extends Fragment {
 
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
 
+
+
+
+
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_profile, container, false);
+
+        //final Animation animation5 =AnimationUtils.loadAnimation(getActivity(),R.anim.righttoleft);
+        //final Animation zoom=AnimationUtils.loadAnimation(getActivity(),R.anim.zoomin);
+      //  RelativeLayout sroll = (RelativeLayout) v.findViewById(R.id.animateplz);
+       // sroll.startAnimation(animation5);
         //  ImageButton imageButton = (ImageButton) v.findViewById(R.id.imageButton);
         // Button button = (Button) v.findViewById(R.id.button2);
         // Button button2 = (Button) v.findViewById(R.id.button3);
-        CardView prva = (CardView) v.findViewById(R.id.prva);
-        prva.setRadius(20);//RADIUS
+       // CardView prva = (CardView) v.findViewById(R.id.prva);
+       // prva.setRadius(20);//RADIUS
         // creating a CardView and assigning a value.
 
 
-        prva.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(),OverviewActivity.class);
+        //prva.setOnClickListener(new View.OnClickListener() {
+          //  @Override
+            //public void onClick(View v) {
+              //  Intent intent = new Intent(getActivity(),OverviewActivity.class);
               //  intent.putExtra(CoverActivity.WORKOUT_KEY,workout);
-                startActivity(intent);
+               // startActivity(intent);
 
                 // do whatever you want to do on click (to launch any fragment or activity you need to put intent here.)
-            }
-        });
-        CardView druga = (CardView) v.findViewById(R.id.druga);
-       druga.setRadius(20);//RADIUS
+           // }
+       // });
+       // CardView druga = (CardView) v.findViewById(R.id.druga);
         // creating a CardView and assigning a value.
 
-        druga.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), OverviewActivity.class);
-                startActivity(intent);
+       // druga.setOnClickListener(new View.OnClickListener() {
+           // @Override
+           // public void onClick(View v) {
+              //  Intent intent = new Intent(getActivity(), OverviewActivity.class);
+              //  startActivity(intent);
 
                 // do whatever you want to do on click (to launch any fragment or activity you need to put intent here.)
-            }
-        });
-        CardView tretja = (CardView) v.findViewById(R.id.tretja);
-        tretja.setRadius(20);//RADIUS
+          //  }
+       // });
+        //CardView tretja = (CardView) v.findViewById(R.id.tretja);
+       // tretja.setRadius(20);//RADIUS
         // creating a CardView and assigning a value.
 
-       tretja.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), OverviewActivity.class);
-                startActivity(intent);
+      // tretja.setOnClickListener(new View.OnClickListener() {
+        //    @Override
+       //     public void onClick(View v) {
+       //         Intent intent = new Intent(getActivity(), OverviewActivity.class);
+       //         startActivity(intent);
 
                 // do whatever you want to do on click (to launch any fragment or activity you need to put intent here.)
-            }
-        });
+        //    }
+       // });
+
         return v;
     }
 

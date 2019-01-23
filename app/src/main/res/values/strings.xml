@@ -50,9 +50,6 @@
     <string name="dela">Please prepare</string>
 
 
-
-
-
     <string name="exercise_title_jumpingjacks">Jumping jacks</string>
     <string name="exercise_desc_jumpingjacks">
         1. Stand with feet together and arms at the sides&lt;br/>
@@ -183,4 +180,16 @@
     <string name="HA">DWDQWQW</string>
     <string name="ADF">0</string>
     <string name="ADF1">lllllllll</string>
+    <string name="Firstplank">First plank First plank First plank</string>
+    <string name="starteasy">start of easy</string>
+    <string name="title_activity_add">ADD</string>
+
+    <string name="interstitial_ad_sample">Interstitial Ad Sample</string>
+    <string name="start_level">Level 1</string>
+    <string name="next_level">Next Level</string>
+    <!-- -
+        This is an ad unit ID for an interstitial test ad. Replace with your own interstitial ad unit id.
+        For more information, see https://support.google.com/admob/answer/3052638
+    <!- -->
+    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
 </resources>

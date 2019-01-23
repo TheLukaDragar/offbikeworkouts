@@ -70,7 +70,7 @@ internal class WorkoutPresenter : WorkoutTimer.TimerCallback {
         }
     }
 
-    private val prepLength = 3
+    private val prepLength = 10
 
     private val workout: Workout
     private val timer: WorkoutTimer

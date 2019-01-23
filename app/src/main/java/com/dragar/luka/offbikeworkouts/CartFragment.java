@@ -11,7 +11,12 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 
+import com.dragar.luka.offbikeworkouts.model.Workout;
+import com.dragar.luka.offbikeworkouts.view.CoverActivity;
+import com.dragar.luka.offbikeworkouts.view.CoverActivity3;
 import com.dragar.luka.offbikeworkouts.view.OverviewActivity3;
+
+import java.util.List;
 
 
 /**
@@ -72,13 +77,16 @@ public class CartFragment extends Fragment {
         View v1 = inflater.inflate(R.layout.fragment_cart, container, false);
         Button button5 = (Button) v1.findViewById(R.id.button3);
         button5.setOnClickListener(new View.OnClickListener() {
+
+
+
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(getActivity(),OverviewActivity3.class);
-                // intent.putExtra(OverviewActivity2.WORKOUT_KEY,workout);
+              //  Intent intent = new Intent(getActivity(),CoverActivity3.class);
+              //   intent.putExtra(CoverActivity3.WORKOUT_KEY3,"2");
                 //intent.putExtra(WorkoutActivity.TTS_KEY,0);
-                startActivity(intent);
+               // startActivity(intent);
 
             }
         });

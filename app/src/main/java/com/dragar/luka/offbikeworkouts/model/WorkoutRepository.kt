@@ -30,53 +30,11 @@ object WorkoutRepository : WorkoutContract.Model {
     override fun retrieveAll(): List<Workout> {
         return listOf(
                 Workout(
-                        titleResource = R.string.workout_title_7minute,
-                        titleResource2 = R.string.ADF1,
+                        titleResource = R.string.Firstplank,
+                        titleResource2 = R.string.starteasy,
                         img = R.drawable.color_back,
                         customColor = 0xff0B65DB,
                         exerciseMetas = arrayOf(
-                                ExerciseMeta(
-                                        Exercise(
-                                                titleResource = R.string.exercise_title_jumpingjacks,
-                                                descResource = R.string.exercise_desc_jumpingjacks,
-                                                imageResource = R.drawable.exercise_jumpingjacks
-                                        ), 30),
-                                ExerciseMeta(
-                                        Exercise(
-                                                titleResource = R.string.exercise_title_wallsit,
-                                                descResource = R.string.exercise_desc_wallsit,
-                                                imageResource = R.drawable.exercise_wallsit
-                                        ), 30),
-                                ExerciseMeta(
-                                        Exercise(
-                                                titleResource = R.string.exercise_title_pushups,
-                                                descResource = R.string.exercise_desc_pushups,
-                                                imageResource = R.drawable.exercise_pushup
-                                        ), 30),
-                                ExerciseMeta(
-                                        Exercise(
-                                                titleResource = R.string.exercise_title_abcrunches,
-                                                descResource = R.string.exercise_desc_abcrunches,
-                                                imageResource = R.drawable.exercise_abcrunch
-                                        ), 30),
-                                ExerciseMeta(
-                                        Exercise(
-                                                titleResource = R.string.exercise_title_stepups,
-                                                descResource = R.string.exercise_desc_stepups,
-                                                imageResource = R.drawable.exercise_stepup
-                                        ), 30),
-                                ExerciseMeta(
-                                        Exercise(
-                                                titleResource = R.string.exercise_title_squats,
-                                                descResource = R.string.exercise_desc_squats,
-                                                imageResource = R.drawable.exercise_squat
-                                        ), 30),
-                                ExerciseMeta(
-                                        Exercise(
-                                                titleResource = R.string.exercise_title_tricepsdips,
-                                                descResource = R.string.exercise_desc_tricepsdips,
-                                                imageResource = R.drawable.exercise_tricepsdip
-                                        ), 30),
                                 ExerciseMeta(
                                         Exercise(
                                                 titleResource = R.string.exercise_title_plank,
@@ -85,36 +43,26 @@ object WorkoutRepository : WorkoutContract.Model {
                                         ), 30),
                                 ExerciseMeta(
                                         Exercise(
-                                                titleResource = R.string.exercise_title_highknees,
-                                                descResource = R.string.exercise_desc_highknees,
-                                                imageResource = R.drawable.exercise_highknees
-                                        ), 30),
-                                ExerciseMeta(
-                                        Exercise(
-                                                titleResource = R.string.exercise_title_lunges,
-                                                descResource = R.string.exercise_desc_lunges,
-                                                imageResource = R.drawable.exercise_lunge
-                                        ), 30),
-                                ExerciseMeta(
-                                        Exercise(
-                                                titleResource = R.string.exercise_title_pushuprotations,
-                                                descResource = R.string.exercise_desc_pushuprotations,
-                                                imageResource = R.drawable.exercise_pushuprotation
-                                        ), 30),
-                                ExerciseMeta(
-                                        Exercise(
                                                 titleResource = R.string.exercise_title_sideplank_l,
                                                 descResource = R.string.exercise_desc_sideplank_l,
                                                 imageResource = R.drawable.exercise_sideplank
                                         ), 30),
+
                                 ExerciseMeta(
                                         Exercise(
                                                 titleResource = R.string.exercise_title_sideplank_r,
                                                 descResource = R.string.exercise_desc_sideplank_r,
                                                 imageResource = R.drawable.exercise_sideplank
-                                        ), 30, isFlipped = true)
+                                        ), 30, isFlipped = true),
+
+                                        ExerciseMeta(
+                                        Exercise(
+                                                titleResource = R.string.exercise_title_plank,
+                                                descResource = R.string.exercise_desc_plank,
+                                                imageResource = R.drawable.exercise_plank
+                                        ), 30)
                         ),
-                        breakLength = 10
+                        breakLength = 15
                 ),
                 Workout(
                         titleResource = R.string.workout_title_7minute,

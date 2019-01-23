@@ -1,210 +1,213 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/animateplz"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileFragment"
-    android:isScrollContainer="true">
+    tools:context=".ProfileFragment">
 
-
-
-    <!-- TODO: Update blank fragment layout -->
-
-
-    <LinearLayout
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/backdark"
+        android:scaleType="centerCrop"
+        android:src="@drawable/luka1" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/color_astrong" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <include
-            android:id="@+id/toolbar"
-            layout="@layout/toolbar"
+        <TextView
+            android:id="@+id/textView2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="LUKA \nDRAGAR"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.234" />
 
-        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/prva"
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="130dp"
+            android:layout_height="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/line_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
             android:layout_width="match_parent"
-            android:layout_height="135dp"
-            android:layout_margin="8dp"
-            android:clickable="true"
-            android:focusable="true"
-            >
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+            app:layout_constraintVertical_bias="0.056">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/color_a">
-
-
-                <ImageView
-                    android:id="@+id/thumbnail"
-                    android:layout_width="match_parent"
-                    android:layout_height="250dp"
-                    android:layout_below="@id/imageView2"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="0dp"
-
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/b" />
-
-                <ImageView
-                    android:id="@+id/imageView2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_above="@id/imageView2"
-                    android:src="@drawable/color_a">
-
-                </ImageView>
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/title"
-                    android:maxLines="3"
-                    android:padding="8dp"
-                    android:text="@string/ed"
-                    android:textColor="@android:color/background_light"
-                    android:textSize="14dp" />
-
-                <TextView
-                    android:id="@+id/title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/thumbnail"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginStart="2dp"
-                    android:layout_marginLeft="2dp"
-                    android:layout_marginTop="-108dp"
-                    android:maxLines="3"
-                    android:padding="8dp"
-                    android:text="Begginer"
-                    android:textColor="@android:color/background_light"
-                    android:textSize="22dp"
-                    android:textStyle="bold" />
-
-            </RelativeLayout>
-        </android.support.v7.widget.CardView>
-
-        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/druga"
-            android:layout_width="match_parent"
-            android:layout_height="137dp"
-            android:layout_margin="8dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/color_a">
-
-                <ImageView
-                    android:id="@+id/thumbnail2"
-                    android:layout_width="match_parent"
-                    android:layout_height="250dp"
-                    android:layout_alignParentTop="true"
-                    android:scaleType="matrix"
-                    android:src="@drawable/bbb" />
-
-                <ImageView
-                    android:id="@+id/imageView3"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_above="@id/imageView2"
-                    android:src="@drawable/color_a">
-
-                </ImageView>
-
-                <TextView
-                    android:id="@+id/title2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/thumbnail2"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginTop="-99dp"
-                    android:maxLines="3"
-                    android:padding="8dp"
-                    android:text="KOM hunter"
-                    android:textColor="@android:color/background_light"
-                    android:textSize="22dp"
+                    android:text="44"
+                    android:textColor="#fff"
+                    android:textSize="22sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/title2"
-                    android:maxLines="3"
-                    android:padding="8dp"
-                    android:text="Go for it!"
-                    android:textColor="@android:color/background_light"
-                    android:textSize="14dp" />
+                    android:text="POST"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
 
-            </RelativeLayout>
-        </android.support.v7.widget.CardView>
+                <RelativeLayout
+                    android:layout_width="70dp"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/line_background" />
+            </LinearLayout>
 
-        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/tretja"
-            android:layout_width="match_parent"
-            android:layout_height="135dp"
-            android:layout_margin="8dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:id="@+id/thumbnail3"
-                    android:layout_width="match_parent"
-                    android:layout_height="250dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="0dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/f" />
-
-                <ImageView
-                    android:id="@+id/imageView4"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_above="@id/imageView2"
-                    android:src="@drawable/color_a">
-
-                </ImageView>
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/title3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/thumbnail3"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginTop="-85dp"
-                    android:maxLines="3"
-                    android:padding="8dp"
-                    android:text="PRO"
-                    android:textColor="@android:color/background_light"
-                    android:textSize="22dp"
+                    android:text="360"
+                    android:textColor="#fff"
+                    android:textSize="22sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/title3"
-                    android:maxLines="3"
-                    android:padding="8dp"
-                    android:text="hardcore"
-                    android:textColor="@android:color/background_light"
-                    android:textSize="14dp" />
+                    android:text="FOLLOWERS"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
 
-            </RelativeLayout>
-        </android.support.v7.widget.CardView>
+                <RelativeLayout
+                    android:layout_width="70dp"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/line_background" />
+            </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="vertical">
 
-    </LinearLayout>
-</ScrollView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="600"
+                    android:textColor="#fff"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FOLLOWING"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:layout_width="70dp"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/line_background" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/butoon_follow_background"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="follow"
+            android:text="I N S T A G R A M"
+            android:textColor="#03ae7d"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            app:layout_constraintVertical_bias="0.19999999" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button_message_background"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="github"
+            android:text="G I T H U B"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button3"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </android.support.constraint.ConstraintLayout>
+</RelativeLayout>

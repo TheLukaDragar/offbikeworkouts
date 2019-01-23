@@ -99,6 +99,7 @@ public class StoreFragment extends Fragment {
             public void onClick(View v) {
 
 
+
                 Intent intent = new Intent(getActivity(),OverviewActivity.class);
               //  card_view.startAnimation(zoom);
 

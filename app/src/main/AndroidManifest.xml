@@ -3,7 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.dragar.luka.offbikeworkouts">
 
+    <!-- Include required permissions for Google Mobile Ads to run. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+
     <application
+
+
+
+
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -27,76 +37,81 @@
             android:theme="@style/AppTheme">
 
         </activity>
-
-        <activity android:name="com.dragar.luka.offbikeworkouts.view.OverviewActivity">
+        <activity android:name=".view.OverviewActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
-
         <activity
-            android:name="com.dragar.luka.offbikeworkouts.view.CoverActivity"
+            android:name=".view.CoverActivity"
             android:parentActivityName=".view.OverviewActivity"
             android:theme="@style/AppThemeCover"
-            tools:ignore="UnusedAttribute"/>
-
+            tools:ignore="UnusedAttribute" />
         <activity
-            android:name="com.dragar.luka.offbikeworkouts.view.WorkoutActivity"
+            android:name=".view.WorkoutActivity"
             android:launchMode="singleTop"
             android:parentActivityName=".view.CoverActivity"
-            tools:ignore="UnusedAttribute"/>
+            tools:ignore="UnusedAttribute" />
 
-        <service android:name="com.dragar.luka.offbikeworkouts.presenter.WorkoutService"/>
+        <service android:name=".presenter.WorkoutService" />
 
-        <activity android:name="com.dragar.luka.offbikeworkouts.view.OverviewActivity2">
+        <activity android:name=".view.OverviewActivity2">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity
-            android:name="com.dragar.luka.offbikeworkouts.view.CoverActivity2"
+            android:name=".view.CoverActivity2"
             android:parentActivityName=".view.OverviewActivity2"
             android:theme="@style/AppThemeCover"
-            tools:ignore="UnusedAttribute"/>
-
+            tools:ignore="UnusedAttribute" />
         <activity
-            android:name="com.dragar.luka.offbikeworkouts.view.WorkoutActivity2"
+            android:name=".view.WorkoutActivity2"
             android:launchMode="singleTop"
             android:parentActivityName=".view.CoverActivity2"
-            tools:ignore="UnusedAttribute"/>
+            tools:ignore="UnusedAttribute" />
 
+        <service android:name=".presenter.WorkoutService2" />
 
-
-        <service android:name="com.dragar.luka.offbikeworkouts.presenter.WorkoutService2"/>
-
-        <activity android:name="com.dragar.luka.offbikeworkouts.view.OverviewActivity3">
+        <activity android:name=".view.OverviewActivity3">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
-
         <activity
-            android:name="com.dragar.luka.offbikeworkouts.view.CoverActivity3"
+            android:name=".view.CoverActivity3"
             android:parentActivityName=".view.OverviewActivity3"
             android:theme="@style/AppThemeCover"
-            tools:ignore="UnusedAttribute"/>
-
+            tools:ignore="UnusedAttribute" />
         <activity
-            android:name="com.dragar.luka.offbikeworkouts.view.WorkoutActivity3"
+            android:name=".view.WorkoutActivity3"
             android:launchMode="singleTop"
             android:parentActivityName=".view.CoverActivity3"
-            tools:ignore="UnusedAttribute"/>
+            tools:ignore="UnusedAttribute" />
 
-        <service android:name="com.dragar.luka.offbikeworkouts.presenter.WorkoutService3"/>
+        <service android:name=".presenter.WorkoutService3" />
+
+        <activity
+            android:name=".ADD"
+            android:label="@string/title_activity_add">
+
+
+        </activity> <!-- Include the AdActivity configChanges and theme. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4526692710511158~5477844156"/>
+
     </application>
 
 </manifest>

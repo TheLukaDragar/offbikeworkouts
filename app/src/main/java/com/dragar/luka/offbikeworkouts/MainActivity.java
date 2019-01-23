@@ -1,13 +1,19 @@
 package com.dragar.luka.offbikeworkouts;
 
+import android.app.Activity;
+import android.content.ActivityNotFoundException;
+import android.content.Intent;
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.view.ActionMode;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -35,11 +41,19 @@ public class MainActivity extends AppCompatActivity {
 
         toolbar1 = getSupportActionBar();
 
+
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
-        toolbar1.setTitle("Shop");
+        //navigation.setSelectedItemId(R.id.navigation_shop);
+
+        toolbar1.setTitle("Core");
+
         loadFragment(new StoreFragment());
+
+
+
+
 
 
 
@@ -87,6 +101,8 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+
             Fragment fragment;
             switch (item.getItemId()) {
                 case R.id.navigation_shop:
@@ -110,6 +126,7 @@ public class MainActivity extends AppCompatActivity {
                     loadFragment(fragment);
                     return true;
             }
+
             return false;
         }
     };
@@ -134,6 +151,64 @@ public class MainActivity extends AppCompatActivity {
         fragment = new ProfileFragment();
         loadFragment(fragment);
     }
+    @Override
+    public void onBackPressed() {
+
+
+
+
+
+        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.navigation);
+        int seletedItemId = bottomNavigationView.getSelectedItemId();
+        if (R.id.navigation_shop != seletedItemId) {
+            setHomeItem(MainActivity.this);
+        } else {
+            finish();
+        }
+    }
+
+    public static void setHomeItem(Activity activity) {
+        BottomNavigationView bottomNavigationView = (BottomNavigationView)
+                activity.findViewById(R.id.navigation);
+        bottomNavigationView.setSelectedItemId(R.id.navigation_shop);
+
+
+
+
+
+
+
+    }
+
+    private void ref() {
+
+
+    }
+
+    public void follow(View view) {
+        Uri uri = Uri.parse("http://instagram.com/_u/thelukadragar");
+        Intent likeIng = new Intent(Intent.ACTION_VIEW, uri);
+
+        likeIng.setPackage("com.instagram.android");
+
+        try {
+            startActivity(likeIng);
+        } catch (ActivityNotFoundException e) {
+            startActivity(new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("http://instagram.com/thelukadragar")));
+        }
+
+
+    }
+
+
+    public void github(View view) {
+        startActivity(new Intent(Intent.ACTION_VIEW,
+                Uri.parse("https://github.com/TheLukaDragar/offbikeworkouts")));
+
+    }
+
+
 }
 
 

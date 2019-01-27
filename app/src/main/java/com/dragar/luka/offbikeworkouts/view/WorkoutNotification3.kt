@@ -47,7 +47,7 @@ class WorkoutNotification3(initService: Service, activityIntent: PendingIntent) 
         }
     }
 
-    private val notificationID = 1
+    private val notificationID = 3
     private val notificationManagerCompat = NotificationManagerCompat.from(initService)
     private val notificationBuilder = NotificationCompat.Builder(initService, channelID)
             .setVisibility(NotificationCompat.VISIBILITY_PUBLIC) // lock screen controls, with sensitive content

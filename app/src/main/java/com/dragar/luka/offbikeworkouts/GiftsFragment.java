@@ -85,20 +85,20 @@ public class GiftsFragment extends Fragment {
             @Override
             public void onClick(View view) {
 
-               // Intent intent = new Intent(getActivity(),OverviewActivity.class);
-                // intent.putExtra(OverviewActivity2.WORKOUT_KEY,workout);
+              Intent intent = new Intent(getActivity(),start.class);
+               //  intent.putExtra(OverviewActivity.WORKOUT_KEY,workout);
                  //intent.putExtra(WorkoutActivity.TTS_KEY,0);
-              // startActivity(intent);
+                startActivity(intent);
 
-                MediaPlayer mediaplayer = MediaPlayer.create(getActivity(), R.raw.movie_1);//You Can Put Your File Name Instead Of abc
-                mediaplayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                    @Override
-                    public void onCompletion(MediaPlayer mediaPlayer) {
-                        mediaPlayer.reset();
-                        mediaPlayer.release();
-                    }
-                });
-                mediaplayer.start();
+            //    MediaPlayer mediaplayer = MediaPlayer.create(getActivity(), R.raw.movie_1);//You Can Put Your File Name Instead Of abc
+               // mediaplayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+               //     @Override
+               //     public void onCompletion(MediaPlayer mediaPlayer) {
+                //        mediaPlayer.reset();
+                //        mediaPlayer.release();
+                //    }
+              //  });
+              //  mediaplayer.start();
 
             }
         });

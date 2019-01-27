@@ -25,7 +25,7 @@ import com.dragar.luka.offbikeworkouts.WorkoutContract
 @author Miroslav Mazel
  */
 object WorkoutRepository : WorkoutContract.Model {
-    private const val NULL_RESOURCE = android.R.color.transparent
+    const val NULL_RESOURCE = android.R.color.transparent
 
     override fun retrieveAll(): List<Workout> {
         return listOf(

@@ -1,0 +1,3341 @@
+{
+  "exercises": [
+    {
+      "id": 1,
+      "code": "bo001_side_leg_lift",
+      "title": "Side Leg Lift",
+      "category_primary": "ccore",
+      "pose": "pseated",
+      "duration": 30,
+      "change_sides": true,
+      "sexyness": 5
+    },
+    {
+      "id": 2,
+      "code": "bo002_mountain_climbers",
+      "title": "Mountain Climbers",
+      "category_primary": "ccore",
+      "category_secondary": "carms",
+      "pose": "pkneeling",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 8
+    },
+    {
+      "id": 3,
+      "code": "bo005_front_kicks",
+      "title": "Front Kicks",
+      "category_primary": "ccore",
+      "pose": "pstanding",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 5
+    },
+    {
+      "id": 4,
+      "code": "bo030_plank_ins",
+      "title": "Plank Ins",
+      "category_primary": "ccore",
+      "pose": "pkneeling",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 7
+    },
+    {
+      "id": 5,
+      "code": "bo031_plank_jacks",
+      "title": "Plank Jacks",
+      "category_primary": "ccore",
+      "pose": "pkneeling",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 8
+    },
+    {
+      "id": 6,
+      "code": "bo035_hundred_pike",
+      "title": "Hundred Pike",
+      "category_primary": "ccore",
+      "pose": "pseated",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 6
+    },
+    {
+      "id": 7,
+      "code": "bo036_the_hundred",
+      "title": "The Hundred",
+      "category_primary": "ccore",
+      "pose": "psupine",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 7
+    },
+    {
+      "id": 8,
+      "code": "bo040_plank_and_rear_kick",
+      "title": "Plank and Rear Kick",
+      "category_primary": "ccore",
+      "category_secondary": "cbutt",
+      "pose": "pkneeling",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 7
+    },
+    {
+      "id": 10,
+      "code": "bo052_sit_ups",
+      "title": "Sit-Ups",
+      "category_primary": "ccore",
+      "pose": "psupine",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 8
+    },
+    {
+      "id": 11,
+      "code": "bo053_mason_twist",
+      "title": "Mason Twist",
+      "category_primary": "ccore",
+      "pose": "pseated",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 6
+    },
+    {
+      "id": 12,
+      "code": "bo054_v_sit_ups",
+      "title": "V Sit-Ups",
+      "category_primary": "ccore",
+      "pose": "psupine",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 5
+    },
+    {
+      "id": 13,
+      "code": "bo055_elevated_crunches",
+      "title": "Elevated Crunches",
+      "category_primary": "ccore",
+      "pose": "psupine",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 7
+    },
+    {
+      "id": 14,
+      "code": "bo056_reaching_crunch",
+      "title": "Reaching Crunch",
+      "category_primary": "ccore",
+      "pose": "psupine",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 7
+    },
+    {
+      "id": 15,
+      "code": "bo065_shoulder_tap_plank",
+      "title": "Shoulder Tap Plank",
+      "category_primary": "ccore",
+      "category_secondary": "cchest",
+      "pose": "pkneeling",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 7
+    },
+    {
+      "id": 16,
+      "code": "bo066_jump_planks",
+      "title": "Jump Planks",
+      "category_primary": "ccore",
+      "category_secondary": "cchest",
+      "pose": "pkneeling",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 7
+    },
+    {
+      "id": 17,
+      "code": "bo099_rollouts",
+      "title": "Roll-outs",
+      "category_primary": "ccore",
+      "pose": "psupine",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 6
+    },
+    {
+      "id": 18,
+      "code": "bo111_plank_pose",
+      "title": "Plank",
+      "category_primary": "ccore",
+      "pose": "pkneeling",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 7
+    },
+    {
+      "id": 19,
+      "code": "bo128_v_sit_rowing",
+      "title": "Crunched Arm Rowing",
+      "category_primary": "ccore",
+      "pose": "pseated",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 7
+    },
+    {
+      "id": 20,
+      "code": "bo129_abs_rollups",
+      "title": "Abs Roll-Ups",
+      "category_primary": "ccore",
+      "pose": "psupine",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 6
+    },
+    {
+      "id": 21,
+      "code": "bo130_seated_core_twist",
+      "title": "Seated Core Twist",
+      "category_primary": "ccore",
+      "pose": "pseated",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 4
+    },
+    {
+      "id": 22,
+      "code": "bo131_teaser",
+      "title": "Teaser",
+      "category_primary": "ccore",
+      "pose": "psupine",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 6
+    },
+    {
+      "id": 23,
+      "code": "bo161_bird_dog",
+      "title": "Bird Dog",
+      "category_primary": "ccore",
+      "category_secondary": "cbutt",
+      "pose": "pkneeling",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 6
+    },
+    {
+      "id": 24,
+      "code": "bo174_corkscrew",
+      "title": "Corkscrew",
+      "category_primary": "ccore",
+      "pose": "psupine",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 5
+    },
+    {
+      "id": 25,
+      "code": "bo177_toe_touches",
+      "title": "Toe Touches",
+      "category_primary": "ccore",
+      "pose": "psupine",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 6
+    },
+    {
+      "id": 26,
+      "code": "bo183_walking_plank",
+      "title": "Walking Plank",
+      "category_primary": "ccore",
+      "category_secondary": "carms",
+      "pose": "pkneeling",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 4
+    },
+    {
+      "id": 27,
+      "code": "bo184_leg_lifts",
+      "title": "Leg Lifts",
+      "category_primary": "ccore",
+      "pose": "psupine",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 5
+    },
+    {
+      "id": 28,
+      "code": "bo188_twisted_mountain_climbers",
+      "title": "Twisted Mountain Climb",
+      "category_primary": "ccore",
+      "category_secondary": "cchest",
+      "pose": "pkneeling",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 7
+    },
+    {
+      "id": 29,
+      "code": "bo191_side_plank_balancing",
+      "title": "Side Plank Balancing",
+      "category_primary": "ccore",
+      "category_secondary": "cbutt",
+      "pose": "pkneeling",
+      "duration": 30,
+      "change_sides": true,
+      "sexyness": 4
+    },
+    {
+      "id": 30,
+      "code": "bo195_russian_twist",
+      "title": "Russian Twist",
+      "category_primary": "ccore",
+      "pose": "pseated",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 4
+    },
+    {
+      "id": 31,
+      "code": "bo203_crunches",
+      "title": "Crunches",
+      "category_primary": "ccore",
+      "pose": "psupine",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 9
+    },
+    {
+      "id": 32,
+      "code": "bo204_arm_raise_plank",
+      "title": "Arm Raise Plank",
+      "category_primary": "ccore",
+      "pose": "pkneeling",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 5
+    },
+    {
+      "id": 33,
+      "code": "bo205_one_arm_plank",
+      "title": "One Arm Plank",
+      "category_primary": "ccore",
+      "pose": "pkneeling",
+      "duration": 30,
+      "change_sides": true,
+      "sexyness": 5
+    },
+    {
+      "id": 34,
+      "code": "bo206_one_leg_plank",
+      "title": "One Leg Plank",
+      "category_primary": "ccore",
+      "pose": "pkneeling",
+      "duration": 30,
+      "change_sides": true,
+      "sexyness": 6
+    },
+    {
+      "id": 35,
+      "code": "bo207_two_point_plank",
+      "title": "Two Point Plank",
+      "category_primary": "ccore",
+      "pose": "pkneeling",
+      "duration": 30,
+      "change_sides": true,
+      "sexyness": 4
+    },
+    {
+      "id": 36,
+      "code": "bo208_one_elbow_plank",
+      "title": "One Elbow Plank",
+      "category_primary": "ccore",
+      "pose": "pkneeling",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 4
+    },
+    {
+      "id": 37,
+      "code": "bo062_squat_and_knee_kick",
+      "title": "Squat and Knee Kick",
+      "category_primary": "clegs",
+      "category_secondary": "ccore",
+      "pose": "pstanding",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 5
+    },
+    {
+      "id": 38,
+      "code": "bo075_burpees",
+      "title": "Burpees",
+      "category_primary": "clegs",
+      "category_secondary": "ccore",
+      "pose": "pstanding",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 7
+    },
+    {
+      "id": 39,
+      "code": "bo039_single_leg_circles",
+      "title": "Single Leg Circles",
+      "category_primary": "ccore",
+      "category_secondary": "ccore",
+      "pose": "psupine",
+      "duration": 30,
+      "change_sides": true,
+      "sexyness": 7
+    },
+    {
+      "id": 40,
+      "code": "bo178_roof_kickback",
+      "title": "Roof Kickback",
+      "category_primary": "cbutt",
+      "category_secondary": "ccore",
+      "pose": "pkneeling",
+      "duration": 30,
+      "change_sides": true,
+      "sexyness": 8
+    },
+    {
+      "id": 41,
+      "code": "bo224_grasshopper_pushups",
+      "title": "Grasshopper Push-Ups",
+      "category_primary": "cchest",
+      "category_secondary": "ccore",
+      "pose": "pkneeling",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 8
+    },
+    {
+      "id": 42,
+      "code": "bo232_spiderman_push_ups",
+      "title": "Spiderman Push-Ups",
+      "category_primary": "cchest",
+      "category_secondary": "ccore",
+      "pose": "pkneeling",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 8
+    },
+    {
+      "id": 43,
+      "code": "bo231_one_leg_push_up",
+      "title": "One Leg Push-Up",
+      "category_primary": "carms",
+      "category_secondary": "ccore",
+      "pose": "pkneeling",
+      "duration": 30,
+      "change_sides": true,
+      "sexyness": 6
+    },
+    {
+      "id": 44,
+      "code": "bo234_narrow_push_ups",
+      "title": "Narrow Push-Ups",
+      "category_primary": "carms",
+      "category_secondary": "cchest",
+      "pose": "pkneeling",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 8
+    },
+    {
+      "id": 45,
+      "code": "bo236_diamond_push_ups",
+      "title": "Diamond Push-Ups",
+      "category_primary": "carms",
+      "category_secondary": "cchest",
+      "pose": "pkneeling",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 8
+    },
+    {
+      "id": 46,
+      "code": "bo041_back_plank_and_kick",
+      "title": "Back Plank and Kick",
+      "category_primary": "cbutt",
+      "category_secondary": "clower_back",
+      "pose": "pseated",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 6
+    },
+    {
+      "id": 47,
+      "code": "bo220_slalom_hops",
+      "title": "Slalom Hops",
+      "category_primary": "clegs",
+      "category_secondary": "ccore",
+      "pose": "pstanding",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 6
+    },
+    {
+      "id": 48,
+      "code": "bo012_march_and_clap",
+      "title": "March and Clap",
+      "category_primary": "ccore",
+      "category_secondary": "ccore",
+      "pose": "pstanding",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 4
+    },
+    {
+      "id": 49,
+      "code": "bo229_shoulder_tap_push_ups",
+      "title": "Shoulder Tap Push-Ups",
+      "category_primary": "cchest",
+      "category_secondary": "carms",
+      "pose": "pkneeling",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 8
+    },
+    {
+      "id": 50,
+      "code": "bo230_arm_clap_push_ups",
+      "title": "Arm Clap Push-Ups",
+      "category_primary": "cchest",
+      "category_secondary": "carms",
+      "pose": "pkneeling",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 5
+    },
+    {
+      "id": 51,
+      "code": "bo233_push_ups",
+      "title": "Push Ups",
+      "category_primary": "cchest",
+      "category_secondary": "carms",
+      "pose": "pkneeling",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 8
+    },
+    {
+      "id": 52,
+      "code": "bo235_wide_arm_push_ups",
+      "title": "Wide Arm Push-Ups",
+      "category_primary": "cchest",
+      "category_secondary": "carms",
+      "pose": "pkneeling",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 6
+    },
+    {
+      "id": 54,
+      "code": "bo076_push_up_burpees",
+      "title": "Push-Up Burpees",
+      "category_primary": "cchest",
+      "category_secondary": "carms",
+      "pose": "pstanding",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 9
+    },
+    {
+      "id": 55,
+      "code": "bo078_running_burpees",
+      "title": "Running Burpees",
+      "category_primary": "cchest",
+      "category_secondary": "carms",
+      "pose": "pstanding",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 5
+    },
+    {
+      "id": 56,
+      "code": "bo100_bridge_kicker",
+      "title": "Bridge Kicker",
+      "category_primary": "cbutt",
+      "category_secondary": "clower_back",
+      "pose": "psupine",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 7
+    },
+    {
+      "id": 57,
+      "code": "bo172_bridge_pose",
+      "title": "Bridge Pose",
+      "category_primary": "cbutt",
+      "category_secondary": "clower_back",
+      "pose": "psupine",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 8
+    },
+    {
+      "id": 58,
+      "code": "bo173_bridges",
+      "title": "Bridges",
+      "category_primary": "cbutt",
+      "category_secondary": "clower_back",
+      "pose": "psupine",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 8
+    },
+    {
+      "id": 59,
+      "code": "bo181_warrior_3",
+      "title": "Warrior 3",
+      "category_primary": "cbutt",
+      "category_secondary": "clower_back",
+      "pose": "pstanding",
+      "duration": 30,
+      "change_sides": true,
+      "sexyness": 4
+    },
+    {
+      "id": 60,
+      "code": "bo216_table_pose",
+      "title": "Table Pose",
+      "category_primary": "cbutt",
+      "category_secondary": "clower_back",
+      "pose": "pseated",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 5
+    },
+    {
+      "id": 61,
+      "code": "bo077_bridge_kick",
+      "title": "Bridge Kick",
+      "category_primary": "cbutt",
+      "category_secondary": "clegs",
+      "pose": "psupine",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 4
+    },
+    {
+      "id": 62,
+      "code": "bo087_skaters",
+      "title": "Skaters",
+      "category_primary": "clegs",
+      "category_secondary": "clegs",
+      "pose": "pstanding",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 7
+    },
+    {
+      "id": 63,
+      "code": "bo125_windmill",
+      "title": "Windmill",
+      "category_primary": "clower_back",
+      "pose": "pstanding",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 5
+    },
+    {
+      "id": 64,
+      "code": "bo135_t_raise",
+      "title": "T-Raise",
+      "category_primary": "cupper_back",
+      "pose": "psupine",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 7
+    },
+    {
+      "id": 65,
+      "code": "bo136_t_chin_ups",
+      "title": "T-Chin Ups",
+      "category_primary": "cupper_back",
+      "pose": "psupine",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 5
+    },
+    {
+      "id": 66,
+      "code": "bo137_y_raise",
+      "title": "Y-Raise",
+      "category_primary": "cupper_back",
+      "pose": "psupine",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 6
+    },
+    {
+      "id": 67,
+      "code": "bo240_air_rowing",
+      "title": "Air Rowing",
+      "category_primary": "cupper_back",
+      "pose": "pstanding",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 4
+    },
+    {
+      "id": 68,
+      "code": "bo120_over_head_clap",
+      "title": "Over Head Clap",
+      "category_primary": "cupper_back",
+      "pose": "pstanding",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 4
+    },
+    {
+      "id": 69,
+      "code": "bo124_squat_and_reach",
+      "title": "Squat & Reach",
+      "category_primary": "clegs",
+      "category_secondary": "ccomplex",
+      "pose": "pstanding",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 5
+    },
+    {
+      "id": 70,
+      "code": "bo095_backward_shoulder_circles",
+      "title": "Backward Shoulder Circles",
+      "category_primary": "cupper_back",
+      "pose": "pstanding",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 3
+    },
+    {
+      "id": 71,
+      "code": "bo103_chair_pose",
+      "title": "Chair Pose",
+      "category_primary": "cupper_back",
+      "category_secondary": "clower_back",
+      "pose": "pstanding",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 5
+    },
+    {
+      "id": 72,
+      "code": "bo175_pigeon_king",
+      "title": "Pigeon King",
+      "category_primary": "clower_back",
+      "category_secondary": "cupper_back",
+      "pose": "psupine",
+      "duration": 30,
+      "change_sides": true,
+      "sexyness": 5
+    },
+    {
+      "id": 73,
+      "code": "bo138_swimmer",
+      "title": "Swimmer",
+      "category_primary": "cupper_back",
+      "category_secondary": "clower_back",
+      "pose": "psupine",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 7
+    },
+    {
+      "id": 74,
+      "code": "bo104_low_cobra",
+      "title": "Low Cobra",
+      "category_primary": "cupper_back",
+      "category_secondary": "clower_back",
+      "pose": "psupine",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 7
+    },
+    {
+      "id": 75,
+      "code": "bo047_chin_up_kick",
+      "title": "Chin-up Kick",
+      "category_primary": "clower_back",
+      "category_secondary": "cupper_back",
+      "pose": "psupine",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 6
+    },
+    {
+      "id": 76,
+      "code": "bo143_like_and_dislike",
+      "title": "Like & Dislike",
+      "category_primary": "cupper_back",
+      "pose": "pstanding",
+      "duration": 30,
+      "change_sides": false,
+      "sexyness": 3
+    }
+  ],
+  "sets": [
+    {
+      "code": "bwcore_insane_sixpack",
+      "premium": false,
+      "exercises": [
+        {
+          "id": 31,
+          "priority": 1,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 35,
+          "priority": 9,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 7,
+          "priority": 5,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 51,
+          "priority": 8,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 11,
+          "priority": 2,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 34,
+          "priority": 5,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 39,
+          "priority": 5,
+          "min_skill": 0,
+          "max_skill": 6
+        },
+        {
+          "id": 8,
+          "priority": 3,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 13,
+          "priority": 3,
+          "min_skill": 6,
+          "max_skill": 10
+        },
+        {
+          "id": 45,
+          "priority": 9,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 25,
+          "priority": 3,
+          "min_skill": 4,
+          "max_skill": 10
+        },
+        {
+          "id": 5,
+          "priority": 4,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 17,
+          "priority": 6,
+          "min_skill": 0,
+          "max_skill": 3
+        },
+        {
+          "id": 14,
+          "priority": 5,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 15,
+          "priority": 4,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 22,
+          "priority": 6,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 1,
+          "priority": 6,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 24,
+          "priority": 9,
+          "min_skill": 0,
+          "max_skill": 7
+        },
+        {
+          "id": 4,
+          "priority": 8,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 12,
+          "priority": 8,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 29,
+          "priority": 4,
+          "min_skill": 7,
+          "max_skill": 10
+        },
+        {
+          "id": 30,
+          "priority": 9,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 18,
+          "priority": 2,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 6,
+          "priority": 5,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 36,
+          "priority": 9,
+          "min_skill": 3,
+          "max_skill": 10
+        },
+        {
+          "id": 21,
+          "priority": 6,
+          "min_skill": 0,
+          "max_skill": 6
+        },
+        {
+          "id": 2,
+          "priority": 1,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 27,
+          "priority": 5,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 41,
+          "priority": 7,
+          "min_skill": 4,
+          "max_skill": 10
+        },
+        {
+          "id": 10,
+          "priority": 1,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 20,
+          "priority": 6,
+          "min_skill": 0,
+          "max_skill": 3
+        },
+        {
+          "id": 16,
+          "priority": 7,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 19,
+          "priority": 6,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 49,
+          "priority": 7,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 37,
+          "priority": 7,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 3,
+          "priority": 6,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 42,
+          "priority": 7,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 33,
+          "priority": 6,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 24,
+          "priority": 3,
+          "min_skill": 0,
+          "max_skill": 4
+        },
+        {
+          "id": 48,
+          "priority": 6,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 26,
+          "priority": 9,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 38,
+          "priority": 6,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 32,
+          "priority": 6,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 47,
+          "priority": 7,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 43,
+          "priority": 5,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 28,
+          "priority": 4,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 39,
+          "priority": 7,
+          "min_skill": 0,
+          "max_skill": 4
+        },
+        {
+          "id": 8,
+          "priority": 8,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 13,
+          "priority": 6,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 18,
+          "priority": 7,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 25,
+          "priority": 7,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 11,
+          "priority": 8,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 2,
+          "priority": 7,
+          "min_skill": 3,
+          "max_skill": 10
+        },
+        {
+          "id": 7,
+          "priority": 8,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 31,
+          "priority": 7,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 34,
+          "priority": 8,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 10,
+          "priority": 6,
+          "min_skill": 3,
+          "max_skill": 10
+        },
+        {
+          "id": 39,
+          "priority": 15,
+          "min_skill": 0,
+          "max_skill": 7
+        },
+        {
+          "id": 32,
+          "priority": 16,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 51,
+          "priority": 18,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 17,
+          "priority": 12,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 28,
+          "priority": 14,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 30,
+          "priority": 11,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 37,
+          "priority": 17,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 20,
+          "priority": 13,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 14,
+          "priority": 14,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 33,
+          "priority": 16,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 22,
+          "priority": 15,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 49,
+          "priority": 17,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 1,
+          "priority": 15,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 3,
+          "priority": 16,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 24,
+          "priority": 15,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 12,
+          "priority": 12,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 29,
+          "priority": 14,
+          "min_skill": 7,
+          "max_skill": 10
+        },
+        {
+          "id": 6,
+          "priority": 12,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 36,
+          "priority": 12,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 21,
+          "priority": 14,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 19,
+          "priority": 13,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 2,
+          "priority": 15,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 27,
+          "priority": 13,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 34,
+          "priority": 18,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 41,
+          "priority": 17,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 10,
+          "priority": 14,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 8,
+          "priority": 15,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 13,
+          "priority": 15,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 25,
+          "priority": 15,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 11,
+          "priority": 12,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 5,
+          "priority": 14,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 52,
+          "priority": 18,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 24,
+          "priority": 12,
+          "min_skill": 0,
+          "max_skill": 4
+        },
+        {
+          "id": 31,
+          "priority": 13,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 15,
+          "priority": 14,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 7,
+          "priority": 15,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 16,
+          "priority": 17,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 39,
+          "priority": 15,
+          "min_skill": 0,
+          "max_skill": 4
+        },
+        {
+          "id": 48,
+          "priority": 16,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 38,
+          "priority": 16,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 35,
+          "priority": 19,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 43,
+          "priority": 14,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 47,
+          "priority": 17,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 4,
+          "priority": 17,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 44,
+          "priority": 15,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 18,
+          "priority": 14,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 31,
+          "priority": 18,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 8,
+          "priority": 19,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 7,
+          "priority": 19,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 18,
+          "priority": 18,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 25,
+          "priority": 17,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 11,
+          "priority": 18,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 34,
+          "priority": 19,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 10,
+          "priority": 17,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 13,
+          "priority": 19,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 2,
+          "priority": 18,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 31,
+          "priority": 21,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 5,
+          "priority": 24,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 49,
+          "priority": 27,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 7,
+          "priority": 23,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 15,
+          "priority": 24,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 11,
+          "priority": 22,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 2,
+          "priority": 21,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 39,
+          "priority": 25,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 8,
+          "priority": 23,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 13,
+          "priority": 23,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 42,
+          "priority": 27,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 25,
+          "priority": 23,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 34,
+          "priority": 25,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 17,
+          "priority": 26,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 41,
+          "priority": 27,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 20,
+          "priority": 26,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 26,
+          "priority": 29,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 14,
+          "priority": 25,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 35,
+          "priority": 29,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 22,
+          "priority": 26,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 1,
+          "priority": 26,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 4,
+          "priority": 28,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 24,
+          "priority": 29,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 12,
+          "priority": 28,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 45,
+          "priority": 29,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 30,
+          "priority": 29,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 6,
+          "priority": 25,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 36,
+          "priority": 29,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 21,
+          "priority": 26,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 27,
+          "priority": 25,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 10,
+          "priority": 21,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 19,
+          "priority": 26,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 16,
+          "priority": 27,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 37,
+          "priority": 27,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 3,
+          "priority": 26,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 33,
+          "priority": 26,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 48,
+          "priority": 26,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 51,
+          "priority": 28,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 24,
+          "priority": 26,
+          "min_skill": 0,
+          "max_skill": 4
+        },
+        {
+          "id": 32,
+          "priority": 26,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 38,
+          "priority": 26,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 43,
+          "priority": 25,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 47,
+          "priority": 27,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 28,
+          "priority": 24,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 18,
+          "priority": 22,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 10,
+          "priority": 27,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 8,
+          "priority": 28,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 18,
+          "priority": 27,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 13,
+          "priority": 28,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 25,
+          "priority": 27,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 11,
+          "priority": 28,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 2,
+          "priority": 27,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 7,
+          "priority": 28,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 31,
+          "priority": 27,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 34,
+          "priority": 28,
+          "min_skill": 0,
+          "max_skill": 10
+        }
+      ]
+    },
+    {
+      "code": "bwcore_complex_core",
+      "premium": false,
+      "exercises": [
+        {
+          "id": 18,
+          "priority": 1,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 5,
+          "priority": 3,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 57,
+          "priority": 7,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 16,
+          "priority": 6,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 23,
+          "priority": 6,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 33,
+          "priority": 7,
+          "min_skill": 3,
+          "max_skill": 10
+        },
+        {
+          "id": 31,
+          "priority": 1,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 12,
+          "priority": 5,
+          "min_skill": 6,
+          "max_skill": 10
+        },
+        {
+          "id": 7,
+          "priority": 5,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 65,
+          "priority": 3,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 74,
+          "priority": 2,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 36,
+          "priority": 1,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 11,
+          "priority": 2,
+          "min_skill": 4,
+          "max_skill": 10
+        },
+        {
+          "id": 27,
+          "priority": 5,
+          "min_skill": 1,
+          "max_skill": 8
+        },
+        {
+          "id": 73,
+          "priority": 1,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 75,
+          "priority": 2,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 25,
+          "priority": 2,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 29,
+          "priority": 4,
+          "min_skill": 7,
+          "max_skill": 10
+        },
+        {
+          "id": 46,
+          "priority": 2,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 22,
+          "priority": 6,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 13,
+          "priority": 2,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 60,
+          "priority": 3,
+          "min_skill": 3,
+          "max_skill": 10
+        },
+        {
+          "id": 8,
+          "priority": 3,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 10,
+          "priority": 1,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 17,
+          "priority": 7,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 72,
+          "priority": 4,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 39,
+          "priority": 5,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 6,
+          "priority": 5,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 23,
+          "priority": 2,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 26,
+          "priority": 9,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 21,
+          "priority": 6,
+          "min_skill": 0,
+          "max_skill": 6
+        },
+        {
+          "id": 73,
+          "priority": 5,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 57,
+          "priority": 2,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 28,
+          "priority": 4,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 1,
+          "priority": 5,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 18,
+          "priority": 2,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 20,
+          "priority": 6,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 56,
+          "priority": 4,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 35,
+          "priority": 7,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 14,
+          "priority": 4,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 19,
+          "priority": 6,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 65,
+          "priority": 7,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 46,
+          "priority": 6,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 74,
+          "priority": 5,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 30,
+          "priority": 7,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 4,
+          "priority": 3,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 39,
+          "priority": 4,
+          "min_skill": 0,
+          "max_skill": 3
+        },
+        {
+          "id": 58,
+          "priority": 5,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 75,
+          "priority": 7,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 3,
+          "priority": 7,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 69,
+          "priority": 6,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 2,
+          "priority": 1,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 38,
+          "priority": 7,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 76,
+          "priority": 7,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 34,
+          "priority": 5,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 15,
+          "priority": 3,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 48,
+          "priority": 7,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 43,
+          "priority": 5,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 70,
+          "priority": 6,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 71,
+          "priority": 4,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 29,
+          "priority": 2,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 47,
+          "priority": 7,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 32,
+          "priority": 5,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 57,
+          "priority": 17,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 16,
+          "priority": 14,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 29,
+          "priority": 18,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 23,
+          "priority": 16,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 73,
+          "priority": 11,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 12,
+          "priority": 17,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 31,
+          "priority": 11,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 7,
+          "priority": 15,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 33,
+          "priority": 15,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 65,
+          "priority": 13,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 74,
+          "priority": 11,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 18,
+          "priority": 11,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 11,
+          "priority": 12,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 27,
+          "priority": 15,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 75,
+          "priority": 12,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 25,
+          "priority": 12,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 46,
+          "priority": 12,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 22,
+          "priority": 16,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 29,
+          "priority": 4,
+          "min_skill": 7,
+          "max_skill": 10
+        },
+        {
+          "id": 13,
+          "priority": 12,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 60,
+          "priority": 13,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 8,
+          "priority": 13,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 10,
+          "priority": 11,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 72,
+          "priority": 14,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 24,
+          "priority": 15,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 6,
+          "priority": 16,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 23,
+          "priority": 12,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 15,
+          "priority": 15,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 21,
+          "priority": 16,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 73,
+          "priority": 15,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 57,
+          "priority": 12,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 1,
+          "priority": 15,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 20,
+          "priority": 16,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 56,
+          "priority": 14,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 26,
+          "priority": 17,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 19,
+          "priority": 16,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 65,
+          "priority": 17,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 74,
+          "priority": 15,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 30,
+          "priority": 17,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 4,
+          "priority": 19,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 58,
+          "priority": 15,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 75,
+          "priority": 17,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 37,
+          "priority": 14,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 3,
+          "priority": 17,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 5,
+          "priority": 13,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 69,
+          "priority": 16,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 2,
+          "priority": 11,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 38,
+          "priority": 17,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 36,
+          "priority": 12,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 76,
+          "priority": 17,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 35,
+          "priority": 15,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 49,
+          "priority": 14,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 48,
+          "priority": 17,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 43,
+          "priority": 15,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 70,
+          "priority": 16,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 71,
+          "priority": 14,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 34,
+          "priority": 16,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 47,
+          "priority": 17,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 28,
+          "priority": 14,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 46,
+          "priority": 12,
+          "min_skill": 0,
+          "max_skill": 10
+        }
+      ]
+    },
+    {
+      "code": "bwcore_strong_back",
+      "premium": false,
+      "exercises": [
+        {
+          "id": 65,
+          "priority": 2,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 74,
+          "priority": 1,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 73,
+          "priority": 1,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 75,
+          "priority": 1,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 64,
+          "priority": 1,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 46,
+          "priority": 1,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 60,
+          "priority": 2,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 56,
+          "priority": 2,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 66,
+          "priority": 2,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 23,
+          "priority": 1,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 72,
+          "priority": 2,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 57,
+          "priority": 1,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 58,
+          "priority": 4,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 67,
+          "priority": 3,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 59,
+          "priority": 2,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 69,
+          "priority": 8,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 68,
+          "priority": 6,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 70,
+          "priority": 6,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 71,
+          "priority": 5,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 76,
+          "priority": 8,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 74,
+          "priority": 7,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 73,
+          "priority": 7,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 64,
+          "priority": 7,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 75,
+          "priority": 7,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 46,
+          "priority": 8,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 60,
+          "priority": 7,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 56,
+          "priority": 9,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 23,
+          "priority": 7,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 72,
+          "priority": 8,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 66,
+          "priority": 8,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 58,
+          "priority": 8,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 65,
+          "priority": 8,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 59,
+          "priority": 9,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 73,
+          "priority": 11,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 74,
+          "priority": 11,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 65,
+          "priority": 12,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 75,
+          "priority": 11,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 64,
+          "priority": 11,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 46,
+          "priority": 11,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 60,
+          "priority": 12,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 56,
+          "priority": 12,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 66,
+          "priority": 12,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 23,
+          "priority": 11,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 72,
+          "priority": 12,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 57,
+          "priority": 11,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 58,
+          "priority": 14,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 67,
+          "priority": 13,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 59,
+          "priority": 12,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 69,
+          "priority": 18,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 68,
+          "priority": 16,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 70,
+          "priority": 16,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 71,
+          "priority": 15,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 76,
+          "priority": 18,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 74,
+          "priority": 17,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 73,
+          "priority": 17,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 64,
+          "priority": 17,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 75,
+          "priority": 17,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 46,
+          "priority": 18,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 60,
+          "priority": 17,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 56,
+          "priority": 19,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 23,
+          "priority": 17,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 72,
+          "priority": 18,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 66,
+          "priority": 18,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 58,
+          "priority": 18,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 65,
+          "priority": 18,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 59,
+          "priority": 19,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 73,
+          "priority": 21,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 74,
+          "priority": 21,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 65,
+          "priority": 22,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 75,
+          "priority": 21,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 64,
+          "priority": 21,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 46,
+          "priority": 21,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 60,
+          "priority": 22,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 56,
+          "priority": 22,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 66,
+          "priority": 22,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 23,
+          "priority": 21,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 72,
+          "priority": 22,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 57,
+          "priority": 21,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 58,
+          "priority": 24,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 67,
+          "priority": 23,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 59,
+          "priority": 22,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 69,
+          "priority": 28,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 68,
+          "priority": 26,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 70,
+          "priority": 26,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 71,
+          "priority": 25,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 76,
+          "priority": 28,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 74,
+          "priority": 27,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 73,
+          "priority": 27,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 64,
+          "priority": 27,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 75,
+          "priority": 27,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 46,
+          "priority": 28,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 60,
+          "priority": 27,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 56,
+          "priority": 29,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 23,
+          "priority": 27,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 72,
+          "priority": 28,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 66,
+          "priority": 28,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 58,
+          "priority": 28,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 65,
+          "priority": 28,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 59,
+          "priority": 29,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 73,
+          "priority": 31,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 74,
+          "priority": 31,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 65,
+          "priority": 32,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 75,
+          "priority": 31,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 64,
+          "priority": 31,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 46,
+          "priority": 31,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 60,
+          "priority": 32,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 56,
+          "priority": 32,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 66,
+          "priority": 32,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 23,
+          "priority": 31,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 72,
+          "priority": 32,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 57,
+          "priority": 31,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 58,
+          "priority": 34,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 67,
+          "priority": 33,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 59,
+          "priority": 32,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 69,
+          "priority": 38,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 68,
+          "priority": 36,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 70,
+          "priority": 36,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 71,
+          "priority": 35,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 76,
+          "priority": 38,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 74,
+          "priority": 37,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 73,
+          "priority": 37,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 64,
+          "priority": 37,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 75,
+          "priority": 37,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 46,
+          "priority": 38,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 60,
+          "priority": 37,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 56,
+          "priority": 39,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 23,
+          "priority": 37,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 72,
+          "priority": 38,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 66,
+          "priority": 38,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 58,
+          "priority": 38,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 65,
+          "priority": 38,
+          "min_skill": 0,
+          "max_skill": 10
+        },
+        {
+          "id": 59,
+          "priority": 39,
+          "min_skill": 0,
+          "max_skill": 10
+        }
+      ]
+    }
+  ]
+}

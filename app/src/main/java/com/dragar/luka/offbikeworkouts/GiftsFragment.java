@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
@@ -13,6 +14,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.dragar.luka.offbikeworkouts.model.Workout;
+import com.dragar.luka.offbikeworkouts.model.WorkoutRepository;
 import com.dragar.luka.offbikeworkouts.view.CoverActivity;
 import com.dragar.luka.offbikeworkouts.view.OverviewActivity;
 import com.dragar.luka.offbikeworkouts.view.OverviewActivity2;
@@ -20,6 +23,7 @@ import com.dragar.luka.offbikeworkouts.view.OverviewActivity2;
 import com.dragar.luka.offbikeworkouts.view.OverviewActivity3;
 import com.dragar.luka.offbikeworkouts.view.WorkoutActivity;
 
+import java.util.List;
 
 
 /**
@@ -91,10 +95,13 @@ public class GiftsFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(getActivity(),start.class);
-                //  intent.putExtra(OverviewActivity.WORKOUT_KEY,workout);
+                //Intent intent = new Intent(getActivity(),CoverActivity.class);
+
+
+               // Workout workout = new Workout();
+                //intent.putExtra(OverviewActivity.WORKOUT_KEY,workout);
                 //intent.putExtra(WorkoutActivity.TTS_KEY,0);
-                startActivity(intent);
+                //startActivity(intent);
 
                 //val intent = Intent(this,OverviewActivity::class.java) startActivity(intent)
                 //val startIntent = Intent(start, CoverActivity::class.java)
@@ -122,10 +129,10 @@ public class GiftsFragment extends Fragment {
          //   @Override
            // public void onClick(View view) {
 
-              Intent intent = new Intent(getActivity(),start.class);
+             // Intent intent = new Intent(getActivity(),Start.class);
                //  intent.putExtra(OverviewActivity.WORKOUT_KEY,workout);
                  //intent.putExtra(WorkoutActivity.TTS_KEY,0);
-                startActivity(intent);
+              //  startActivity(intent);
 
             //    MediaPlayer mediaplayer = MediaPlayer.create(getActivity(), R.raw.movie_1);//You Can Put Your File Name Instead Of abc
                // mediaplayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {

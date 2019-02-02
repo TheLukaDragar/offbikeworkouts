@@ -112,6 +112,9 @@ class OverviewActivity : AppCompatActivity() {
 
 
     //todo consider creating service here, then just passing it onto the activity created
+    companion object {
+        lateinit var WORKOUT_KEY: String
+    }
 }
 
 

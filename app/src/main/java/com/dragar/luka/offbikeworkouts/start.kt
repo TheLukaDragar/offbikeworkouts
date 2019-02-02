@@ -12,12 +12,13 @@ import com.dragar.luka.offbikeworkouts.model.WorkoutRepository
 import com.dragar.luka.offbikeworkouts.view.CoverActivity
 import com.dragar.luka.offbikeworkouts.view.OverviewActivity
 
-class start : AppCompatActivity()
+class Start : AppCompatActivity()
 {
 
 
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun
+            onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.start_act)
         startplz()
@@ -29,7 +30,7 @@ class start : AppCompatActivity()
         // set on-click listener
         btn_click_me.setOnClickListener {
             // your code to perform when the user clicks on the button
-            Toast.makeText(this@start, "You clicked me.", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@Start, "You clicked me.", Toast.LENGTH_SHORT).show()
             startplz()
 
 

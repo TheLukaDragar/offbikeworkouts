@@ -19,7 +19,8 @@
         android:id="@+id/frame_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+        android:layout_marginBottom="55dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
     </FrameLayout>
 
@@ -33,7 +34,9 @@
         app:itemBackground="@color/backdark"
         app:itemIconTint="@color/green"
         app:itemTextColor="@android:color/white"
-        app:menu="@menu/navigatio" />
+        app:menu="@menu/navigatio" >
+
+    </android.support.design.widget.BottomNavigationView>
 
 
 </android.support.design.widget.CoordinatorLayout>

@@ -63,6 +63,8 @@ class SuccessFragment internal constructor() : Fragment() {
 
 
 
+
+
         return inflater.inflate(R.layout.fragment_success, container, false)
 
 
@@ -81,7 +83,9 @@ class SuccessFragment internal constructor() : Fragment() {
 
 
 
+
         activity?.runOnUiThread {
+
             doneIB.setOnClickListener {
 
 

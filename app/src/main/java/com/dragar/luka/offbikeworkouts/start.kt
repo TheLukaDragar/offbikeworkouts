@@ -20,18 +20,28 @@ class Start : AppCompatActivity()
     override fun
             onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.start_act)
-        startplz()
+        //setContentView(R.layout.start_act)
+        val prva = "1"
+        val druga = "2"
+        val ss:String = intent.getStringExtra("ker")
+        if (ss == prva)
+           startplz()
+        finish()
+
+        if (ss == druga)
+            startplz2()
         finish()
 
 
+
+
+
+        //startplz()
+        //finish()
+
+
         // get reference to button
-        val btn_click_me = findViewById<Button>(R.id.btn_click_me)
-        // set on-click listener
-        btn_click_me.setOnClickListener {
-            // your code to perform when the user clicks on the button
-            Toast.makeText(this@Start, "You clicked me.", Toast.LENGTH_SHORT).show()
-            startplz()
+
 
 
 
@@ -44,7 +54,7 @@ class Start : AppCompatActivity()
             //val startIntent = Intent(start, CoverActivity::class.java)
            // startIntent.putExtra(CoverActivity.WORKOUT_KEY, workout)
                    // .startActivity(startIntent)
-        }
+
 
 
 
@@ -56,6 +66,79 @@ class Start : AppCompatActivity()
 
         val workout = Workout(
                 titleResource = R.string.streching,
+                titleResource2 = R.string.HA,
+                img = R.drawable.f,
+                customColor = 0xffff5f00,
+                exerciseMetas = arrayOf(
+                        ExerciseMeta(
+                                Exercise(
+                                        titleResource = R.string.exercise_title_reverselungerotaiton,
+                                        descResource = R.string.tbd,
+                                        imageResource = R.raw.giphy
+                                ), 30),
+                        ExerciseMeta(
+                                Exercise(
+                                        titleResource = R.string.exercise_title_sideplank_l,
+                                        descResource = R.string.exercise_desc_sideplank_l,
+                                        imageResource = R.drawable.exercise_sideplank
+                                ), 30),
+                        ExerciseMeta(
+                                Exercise(
+                                        titleResource = R.string.exercise_title_pushuprowburpee,
+                                        descResource = R.string.tbd,
+                                        imageResource = WorkoutRepository.NULL_RESOURCE
+                                ), 60),
+                        ExerciseMeta(
+                                Exercise(
+                                        titleResource = R.string.exercise_title_sideplank_r,
+                                        descResource = R.string.exercise_desc_sideplank_r,
+                                        imageResource = R.drawable.exercise_sideplank
+                                ), 30, isFlipped = true),
+                        ExerciseMeta(
+                                Exercise(
+                                        titleResource = R.string.exercise_title_romaniancurlpress_l,
+                                        descResource = R.string.tbd,
+                                        imageResource = WorkoutRepository.NULL_RESOURCE
+                                ), 60),
+                        ExerciseMeta(
+                                Exercise(
+                                        titleResource = R.string.exercise_title_romaniancurlpress_r,
+                                        descResource = R.string.tbd,
+                                        imageResource = WorkoutRepository.NULL_RESOURCE
+                                ), 60, isFlipped = true),
+                        ExerciseMeta(
+                                Exercise(
+                                        titleResource = R.string.exercise_title_plankarmlift,
+                                        descResource = R.string.tbd,
+                                        imageResource = WorkoutRepository.NULL_RESOURCE
+                                ), 30),
+                        ExerciseMeta(
+                                Exercise(
+                                        titleResource = R.string.exercise_title_laterallungetotricepsextension,
+                                        descResource = R.string.tbd,
+                                        imageResource = WorkoutRepository.NULL_RESOURCE
+                                ), 60),
+                        ExerciseMeta(
+                                Exercise(
+                                        titleResource = R.string.exercise_title_bentoverrow,
+                                        descResource = R.string.tbd,
+                                        imageResource = WorkoutRepository.NULL_RESOURCE
+                                ), 60)
+                ),
+                breakLength = 10
+
+        )
+
+
+        intent.putExtra(CoverActivity.WORKOUT_KEY,workout)
+        startActivity(intent)
+    }
+
+    private fun startplz2() {
+        val intent = Intent(this,CoverActivity::class.java)
+
+        val workout = Workout(
+                titleResource = R.string.deluje,
                 titleResource2 = R.string.HA,
                 img = R.drawable.f,
                 customColor = 0xffff5f00,

@@ -95,13 +95,14 @@ public class GiftsFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                //Intent intent = new Intent(getActivity(),CoverActivity.class);
+                Intent intent = new Intent(GiftsFragment.this.getActivity(),Start.class);
+                intent.putExtra("ker","1");
 
 
-               // Workout workout = new Workout();
-                //intent.putExtra(OverviewActivity.WORKOUT_KEY,workout);
+
+               // intent.putExtra(CoverActivity.WORKOUT_KEY,workout);
                 //intent.putExtra(WorkoutActivity.TTS_KEY,0);
-                //startActivity(intent);
+                startActivity(intent);
 
                 //val intent = Intent(this,OverviewActivity::class.java) startActivity(intent)
                 //val startIntent = Intent(start, CoverActivity::class.java)
@@ -122,6 +123,23 @@ public class GiftsFragment extends Fragment {
 
 
                 // do whatever you want to do on click (to launch any fragment or activity you need to put intent here.)
+            }
+        });
+
+        final CardView card_view2 = (CardView) v.findViewById(R.id.card_view2);
+        card_view2.setRadius(20);//RADIUS
+        // creating a CardView and assigning a value.
+
+        card_view2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(GiftsFragment.this.getActivity(),Start.class);
+                // intent.putExtra(CoverActivity.WORKOUT_KEY,workout);
+                intent.putExtra("ker","2");
+                startActivity(intent);
+
+
             }
         });
        // Button button = (Button) v.findViewById(R.id.button);

@@ -72,44 +72,44 @@ class Start : AppCompatActivity()
                 exerciseMetas = arrayOf(
                         ExerciseMeta(
                                 Exercise(
-                                        titleResource = R.string.exercise_title_reverselungerotaiton,
-                                        descResource = R.string.tbd,
-                                        imageResource = R.raw.giphy
+                                        titleResource = R.string.forwardbend,
+                                        descResource = R.string.forwardbendD,
+                                        imageResource = WorkoutRepository.NULL_RESOURCE
+                                ), 20),
+                        ExerciseMeta(
+                                Exercise(
+                                        titleResource = R.string.forwardbendleft,
+                                        descResource = R.string.forwardbendleftD,
+                                        imageResource = WorkoutRepository.NULL_RESOURCE
                                 ), 30),
                         ExerciseMeta(
                                 Exercise(
-                                        titleResource = R.string.exercise_title_sideplank_l,
-                                        descResource = R.string.exercise_desc_sideplank_l,
-                                        imageResource = R.drawable.exercise_sideplank
+                                        titleResource = R.string.forwardbendright,
+                                        descResource = R.string.forwardbendrightD,
+                                        imageResource = WorkoutRepository.NULL_RESOURCE
                                 ), 30),
                         ExerciseMeta(
                                 Exercise(
-                                        titleResource = R.string.exercise_title_pushuprowburpee,
-                                        descResource = R.string.tbd,
+                                        titleResource = R.string.leftquad,
+                                        descResource = R.string.leftquadD,
                                         imageResource = WorkoutRepository.NULL_RESOURCE
-                                ), 60),
+                                ), 30),
                         ExerciseMeta(
                                 Exercise(
-                                        titleResource = R.string.exercise_title_sideplank_r,
-                                        descResource = R.string.exercise_desc_sideplank_r,
-                                        imageResource = R.drawable.exercise_sideplank
-                                ), 30, isFlipped = true),
-                        ExerciseMeta(
-                                Exercise(
-                                        titleResource = R.string.exercise_title_romaniancurlpress_l,
-                                        descResource = R.string.tbd,
+                                        titleResource = R.string.rightquad,
+                                        descResource = R.string.rightquadD,
                                         imageResource = WorkoutRepository.NULL_RESOURCE
-                                ), 60),
+                                ), 30),
                         ExerciseMeta(
                                 Exercise(
-                                        titleResource = R.string.exercise_title_romaniancurlpress_r,
-                                        descResource = R.string.tbd,
+                                        titleResource = R.string.calfleft,
+                                        descResource = R.string.calfleftD,
                                         imageResource = WorkoutRepository.NULL_RESOURCE
-                                ), 60, isFlipped = true),
+                                ), 30),
                         ExerciseMeta(
                                 Exercise(
-                                        titleResource = R.string.exercise_title_plankarmlift,
-                                        descResource = R.string.tbd,
+                                        titleResource = R.string.calfright,
+                                        descResource = R.string.calfrightD,
                                         imageResource = WorkoutRepository.NULL_RESOURCE
                                 ), 30),
                         ExerciseMeta(

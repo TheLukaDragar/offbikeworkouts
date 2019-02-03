@@ -192,6 +192,57 @@
         For more information, see https://support.google.com/admob/answer/3052638
     <!- -->
     <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
-    <string name="streching">Post ride streching</string>
+    <string name="streching">Post ride stretching</string>
     <string name="deluje">OMG DELA</string>
+
+
+    <string name="forwardbend">Forward bend</string>
+    <string name="forwardbendD">
+        1. Stand on the floor with your feet together&lt;br/>
+        2. Then bend your body and try to touch your feet with your arms&lt;br/>
+        3. Remember to exhale when stretching
+        </string>
+    <string name="forwardbendleft">Forward bend left leg</string>
+    <string name="forwardbendleftD">
+        1. Stand on the floor with your feet crossed right leg over left leg.&lt;br/>
+        2. Then bend your body and try to touch your left foot with your arms&lt;br/>
+        3. This helps to even both legs out&lt;br/>
+        4. Remember to exhale when stretching
+    </string>
+    <string name="forwardbendright">Forward bend right leg</string>
+    <string name="forwardbendrightD">
+        1. Stand on the floor with your feet crossed left leg over right leg.&lt;br/>
+        2. Then bend your body and try to touch your left foot with your arms&lt;br/>
+        3. This helps to even both legs out&lt;br/>
+        4. Remember to exhale when stretching
+    </string>
+    <string name="leftquad">Left quad stretch with a wall</string>
+    <string name="leftquadD">
+        1. Stand with your right hand against the wall.&lt;br/>
+        2. Bend your left leg and grasp your ankle or toes to bring your left calf close to your left thigh&lt;br/>
+        3. Hold this position
+    </string>
+    <string name="rightquad">Right quad stretch with a wall</string>
+    <string name="rightquadD">
+        1. Stand with your left hand against the wall.&lt;br/>
+        2. Bend your right leg and grasp your ankle or toes to bring your right calf close to your right thigh&lt;br/>
+        3. Hold this position
+    </string>
+
+    <string name="calfleft">Calf stretch left</string>
+    <string name="calfleftD">
+        1. Stand one big step away in front of a wall.&lt;br/>
+        2. Step forward with your right foot and push the wall with your hands&lt;br/>
+        3. Make sure your left leg is fully extended and you feel the stretch
+    </string>
+    <string name="calfright">Calf stretch right</string>
+    <string name="calfrightD">
+        1. Stand one big step away in front of a wall.&lt;br/>
+        2. Step forward with your left foot and push the wall with your hands&lt;br/>
+        3. Make sure your right leg is fully extended and you feel the stretch
+    </string>
+
+    <string name="title_activity_splash">Splash</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

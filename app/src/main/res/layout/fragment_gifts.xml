@@ -45,10 +45,10 @@
 
 
                     <ImageView
-                        android:id="@+id/thumbnail"
+                        android:id="@+id/thumbnail5"
                         android:layout_width="match_parent"
                         android:layout_height="250dp"
-                        android:layout_below="@id/imageView2"
+                        android:layout_below="@id/imageView5"
                         android:layout_alignParentStart="true"
                         android:layout_alignParentLeft="true"
                         android:layout_alignParentTop="true"
@@ -58,10 +58,10 @@
                         android:src="@drawable/tinkoff1" />
 
                     <ImageView
-                        android:id="@+id/imageView2"
+                        android:id="@+id/imageView5"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_above="@id/imageView2"
+                        android:layout_above="@id/imageView5"
                         android:src="@drawable/color_a">
 
                     </ImageView>
@@ -69,7 +69,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/title"
+                        android:layout_below="@+id/title9"
                         android:maxLines="3"
                         android:padding="8dp"
                         android:text="strech after every ride"
@@ -77,10 +77,10 @@
                         android:textSize="14dp" />
 
                     <TextView
-                        android:id="@+id/title"
+                        android:id="@+id/title9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/thumbnail"
+                        android:layout_below="@+id/thumbnail5"
                         android:layout_alignParentStart="true"
                         android:layout_alignParentLeft="true"
                         android:layout_marginStart="2dp"
@@ -116,10 +116,10 @@
                         android:src="@drawable/moon" />
 
                     <ImageView
-                        android:id="@+id/imageView3"
+                        android:id="@+id/imageView2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_above="@id/imageView2"
+
                         android:src="@drawable/color_a">
 
                     </ImageView>
@@ -170,13 +170,14 @@
                         android:layout_alignParentTop="true"
                         android:layout_marginTop="0dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/backstrech" />
+                        android:src="@drawable/backstrech"
+                        android:layout_alignParentLeft="true" />
 
                     <ImageView
-                        android:id="@+id/imageView4"
+                        android:id="@+id/imageView10"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_above="@id/imageView2"
+
                         android:src="@drawable/color_a">
 
                     </ImageView>
@@ -186,7 +187,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/thumbnail3"
-                        android:layout_alignParentStart="true"
+
                         android:layout_marginTop="-85dp"
                         android:maxLines="3"
                         android:padding="8dp"
@@ -221,10 +222,9 @@
 
 
                     <ImageView
-                        android:id="@+id/thumbnail"
+                        android:id="@+id/thumbnail4"
                         android:layout_width="match_parent"
                         android:layout_height="250dp"
-                        android:layout_below="@id/imageView2"
                         android:layout_alignParentStart="true"
                         android:layout_alignParentLeft="true"
                         android:layout_alignParentTop="true"
@@ -234,10 +234,10 @@
                         android:src="@drawable/hipstrech" />
 
                     <ImageView
-                        android:id="@+id/imageView2"
+                        android:id="@+id/imageView4"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_above="@id/imageView2"
+
                         android:src="@drawable/color_a">
 
                     </ImageView>
@@ -245,7 +245,6 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/title"
                         android:maxLines="3"
                         android:padding="8dp"
                         android:text="@string/ed"
@@ -253,10 +252,9 @@
                         android:textSize="14dp" />
 
                     <TextView
-                        android:id="@+id/title"
+                        android:id="@+id/title11"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/thumbnail"
                         android:layout_alignParentStart="true"
                         android:layout_alignParentLeft="true"
                         android:layout_marginStart="2dp"
@@ -285,10 +283,9 @@
 
 
                     <ImageView
-                        android:id="@+id/thumbnail"
+                        android:id="@+id/thumbnail12"
                         android:layout_width="match_parent"
                         android:layout_height="250dp"
-                        android:layout_below="@id/imageView2"
                         android:layout_alignParentStart="true"
                         android:layout_alignParentLeft="true"
                         android:layout_alignParentTop="true"
@@ -298,10 +295,11 @@
                         android:src="@drawable/nechstrech" />
 
                     <ImageView
-                        android:id="@+id/imageView2"
+                        android:id="@+id/imageView16"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_above="@id/imageView2"
+
+
                         android:src="@drawable/color_a">
 
                     </ImageView>
@@ -320,7 +318,7 @@
                         android:id="@+id/title"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/thumbnail"
+
                         android:layout_alignParentStart="true"
                         android:layout_alignParentLeft="true"
                         android:layout_marginStart="2dp"

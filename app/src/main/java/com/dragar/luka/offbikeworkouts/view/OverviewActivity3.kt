@@ -25,14 +25,11 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageSwitcher
 import android.widget.ImageView
 import android.widget.TextView
 import com.dragar.luka.offbikeworkouts.R
-import com.dragar.luka.offbikeworkouts.model.ExerciseMeta
 import com.dragar.luka.offbikeworkouts.model.Workout3
 import com.dragar.luka.offbikeworkouts.model.WorkoutRepository3
-import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_overview3.*
 import java.lang.ref.WeakReference
 
@@ -96,7 +93,7 @@ class OverviewActivity3 : AppCompatActivity() {
         internal class ViewHolder(item: View) : RecyclerView.ViewHolder(item) {
             var title = item.findViewById<View>(R.id.title) as TextView
             var title2 = item.findViewById<View>(R.id.title2) as TextView
-            var img2 = item.findViewById<View>(R.id.imageView) as ImageView
+            var img2 = item.findViewById<View>(R.id.imageView5) as ImageView
           //  var img = item.findViewById<View>(R.id.imageView6) as ImageView
 
 

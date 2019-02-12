@@ -5,28 +5,23 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Parcelable;
-import android.service.vr.VrListenerService;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+
 import android.widget.Toast;
 
-import com.dragar.luka.offbikeworkouts.model.Exercise;
-import com.dragar.luka.offbikeworkouts.model.ExerciseMeta;
-import com.dragar.luka.offbikeworkouts.model.Workout;
-import com.dragar.luka.offbikeworkouts.model.WorkoutRepository;
-import com.dragar.luka.offbikeworkouts.view.CoverActivity;
-import com.dragar.luka.offbikeworkouts.view.OverviewActivity;
-import com.dragar.luka.offbikeworkouts.view.OverviewActivity2;
 
-import com.dragar.luka.offbikeworkouts.view.OverviewActivity3;
-import com.dragar.luka.offbikeworkouts.view.WorkoutActivity;
+import com.dragar.luka.offbikeworkouts.model.Exercise2;
 
-import java.util.List;
+import com.dragar.luka.offbikeworkouts.model.ExerciseMeta2;
+
+import com.dragar.luka.offbikeworkouts.model.Workout2;
+
+import com.dragar.luka.offbikeworkouts.view.CoverActivity2;
+
 
 
 /**
@@ -90,6 +85,8 @@ public class GiftsFragment extends Fragment {
 
 
 
+
+
         final CardView card_view = (CardView) v.findViewById(R.id.card_view);
         card_view.setRadius(20);//RADIUS
         // creating a CardView and assigning a value.
@@ -98,14 +95,16 @@ public class GiftsFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(GiftsFragment.this.getActivity(),Start.class);
-                intent.putExtra("ker","1");
+               // Intent intent = new Intent(GiftsFragment.this.getActivity(),Start.class);
+                //intent.putExtra("ker","1");
+                //startActivity(intent);
 
 
 
                // intent.putExtra(CoverActivity.WORKOUT_KEY,workout);
                 //intent.putExtra(WorkoutActivity.TTS_KEY,0);
-                startActivity(intent);
+
+
 
                 //val intent = Intent(this,OverviewActivity::class.java) startActivity(intent)
                 //val startIntent = Intent(start, CoverActivity::class.java)
@@ -137,10 +136,10 @@ public class GiftsFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(GiftsFragment.this.getActivity(),Start.class);
+                //Intent intent = new Intent(GiftsFragment.this.getActivity(),Start.class);
                 // intent.putExtra(CoverActivity.WORKOUT_KEY,workout);
-                intent.putExtra("ker","2");
-                startActivity(intent);
+               // intent.putExtra("ker","2");
+                //startActivity(intent);
 
 
             }
@@ -149,21 +148,21 @@ public class GiftsFragment extends Fragment {
         final CardView card_view3 = (CardView) v.findViewById(R.id.card_view3);
         card_view3.setRadius(20);//RADIUS
         // creating a CardView and assigning a value.
+        //Intent intent = new Intent(GiftsFragment.this.getActivity(),Start.class);
+       // intent.putExtra("ker","3");
+       // startActivity(intent);
 
 
 
 
-       final Workout workout = new Workout(
+
+
+      final Workout2 workout2 = new Workout2(
                 R.string.Firstplank,
-                R.string.starteasy,
-                R.drawable.color_back,
-                0xff0B65DB,
-                new ExerciseMeta[]{new ExerciseMeta(new Exercise(
-                        R.string.exercise_title_plank,
-                       R.string.exercise_desc_plank,
-                       R.drawable.exercise_plank
-                ), 30,false)}
-                ,30);
+               0xff0B65DB,
+              new ExerciseMeta2[]{new ExerciseMeta2(
+                      new Exercise2(R.string.exercise_title_plank,R.string.exercise_desc_plank,R.drawable.exercise_plank)
+                      ,30,false)},30);
 
 
        // R.string.exercise_title_laterallungetotricepsextension,
@@ -174,10 +173,12 @@ public class GiftsFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(GiftsFragment.this.getActivity(),CoverActivity.class);
-                 intent.putExtra(CoverActivity.WORKOUT_KEY,workout);
+                Intent intent = new Intent(GiftsFragment.this.getActivity(),CoverActivity2.class);
+
+                 intent.putExtra(CoverActivity2.WORKOUT_KEY2,workout2);
                 //intent.putExtra("ker","2");
                 startActivity(intent);
+
 
 
             }
@@ -265,3 +266,11 @@ public class GiftsFragment extends Fragment {
         void onFragmentInteraction(Uri uri);
     }
 }
+    //final Workout workout = new Workout(
+       //     R.string.Firstplank,
+         //   R.string.starteasy,
+          //  R.drawable.color_back,
+           // 0xff0B65DB,
+           // new ExerciseMeta[]{new ExerciseMeta(
+                 //   new Exercise(R.string.exercise_title_plank,R.string.exercise_desc_plank,R.drawable.exercise_plank)
+                 //   ,30,false)},30);

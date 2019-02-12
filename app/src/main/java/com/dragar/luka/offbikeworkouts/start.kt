@@ -23,6 +23,7 @@ class Start : AppCompatActivity()
         //setContentView(R.layout.start_act)
         val prva = "1"
         val druga = "2"
+        val tretja = "3"
         val ss:String = intent.getStringExtra("ker")
         if (ss == prva)
            startplz()
@@ -30,6 +31,10 @@ class Start : AppCompatActivity()
 
         if (ss == druga)
             startplz2()
+        finish()
+
+        if (ss == tretja)
+            startplz3()
         finish()
 
 
@@ -183,6 +188,79 @@ class Start : AppCompatActivity()
                                 Exercise(
                                         titleResource = R.string.exercise_title_plankarmlift,
                                         descResource = R.string.tbd,
+                                        imageResource = WorkoutRepository.NULL_RESOURCE
+                                ), 30),
+                        ExerciseMeta(
+                                Exercise(
+                                        titleResource = R.string.exercise_title_laterallungetotricepsextension,
+                                        descResource = R.string.tbd,
+                                        imageResource = WorkoutRepository.NULL_RESOURCE
+                                ), 60),
+                        ExerciseMeta(
+                                Exercise(
+                                        titleResource = R.string.exercise_title_bentoverrow,
+                                        descResource = R.string.tbd,
+                                        imageResource = WorkoutRepository.NULL_RESOURCE
+                                ), 60)
+                ),
+                breakLength = 10
+
+        )
+
+
+        intent.putExtra(CoverActivity.WORKOUT_KEY,workout)
+        startActivity(intent)
+    }
+
+    private fun startplz3() {
+        val intent = Intent(this,CoverActivity::class.java)
+
+        val workout = Workout(
+                titleResource = R.string.streching,
+                titleResource2 = R.string.HA,
+                img = R.drawable.f,
+                customColor = 0xffff5f00,
+                exerciseMetas = arrayOf(
+                        ExerciseMeta(
+                                Exercise(
+                                        titleResource = R.string.forwardbend,
+                                        descResource = R.string.forwardbendD,
+                                        imageResource = WorkoutRepository.NULL_RESOURCE
+                                ), 20),
+                        ExerciseMeta(
+                                Exercise(
+                                        titleResource = R.string.forwardbendleft,
+                                        descResource = R.string.forwardbendleftD,
+                                        imageResource = WorkoutRepository.NULL_RESOURCE
+                                ), 30),
+                        ExerciseMeta(
+                                Exercise(
+                                        titleResource = R.string.forwardbendright,
+                                        descResource = R.string.forwardbendrightD,
+                                        imageResource = WorkoutRepository.NULL_RESOURCE
+                                ), 30),
+                        ExerciseMeta(
+                                Exercise(
+                                        titleResource = R.string.leftquad,
+                                        descResource = R.string.leftquadD,
+                                        imageResource = WorkoutRepository.NULL_RESOURCE
+                                ), 30),
+                        ExerciseMeta(
+                                Exercise(
+                                        titleResource = R.string.rightquad,
+                                        descResource = R.string.rightquadD,
+                                        imageResource = WorkoutRepository.NULL_RESOURCE
+                                ), 30),
+                        ExerciseMeta(
+                                Exercise(
+                                        titleResource = R.string.calfleft,
+                                        descResource = R.string.calfleftD,
+                                        imageResource = WorkoutRepository.NULL_RESOURCE
+                                ), 30),
+                        ExerciseMeta(
+                                Exercise(
+                                        titleResource = R.string.calfright,
+                                        descResource = R.string.calfrightD,
                                         imageResource = WorkoutRepository.NULL_RESOURCE
                                 ), 30),
                         ExerciseMeta(

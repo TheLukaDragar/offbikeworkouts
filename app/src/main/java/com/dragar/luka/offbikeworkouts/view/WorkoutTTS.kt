@@ -34,9 +34,11 @@ import java.lang.ref.WeakReference
 class WorkoutTTS(private val context: WeakReference<Context>) : WorkoutContract.View, TextToSpeech.OnInitListener {
     private val countdown = 5
     private val halftimeMin = 8
+    private val fourthtimeMin = 5
     private val tts = TextToSpeech(context.get(), this)
 
     private var halfTime = 0
+    private var fourthTime = 0
     private var ttsLoaded = false
 
     override fun close() { //todo test for this
@@ -110,6 +112,7 @@ class WorkoutTTS(private val context: WeakReference<Context>) : WorkoutContract.
 
     override fun setExercise(workoutPos: Int, exerciseMeta: ExerciseMeta) {
         halfTime = exerciseMeta.duration / 2
+        fourthTime =  exerciseMeta.duration -6
 
         speak(context.get()?.getString(exerciseMeta.exercise.titleResource))
     }
@@ -136,7 +139,23 @@ class WorkoutTTS(private val context: WeakReference<Context>) : WorkoutContract.
             if (seconds == halfTime && halfTime >= halftimeMin) {
                 speak(String.format(context.get()?.getString(R.string.audio_halftime) ?: "", seconds))
             }
+            if (seconds == fourthTime && fourthTime >= fourthtimeMin) {
+             //   speak(String.format(context.get()?.getString(R.string.audio_fourthtime) ?: "", seconds))
+               // speak(context.get()?.getString(exerciseMeta.exercise.descResource))
+            }
         }
+    }
+
+    override fun setDesc(workoutPos: Int, exerciseMeta: ExerciseMeta,seconds: Int) {
+       // val descString = context.get()?.getString(exerciseMeta.exercise.descResource)
+        if (seconds <= countdown)
+            speak(seconds.toString())
+
+        if (seconds == fourthTime && fourthTime >= fourthtimeMin) {
+            speak(String.format(context.get()?.getString(R.string.audio_halftime) ?: "", seconds))
+            speak(context.get()?.getString(exerciseMeta.exercise.descResource))
+        }
+
     }
 
     override fun setPlaying() {}

@@ -39,7 +39,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:contentDescription="@string/app_name"
-            app:srcCompat="@drawable/ic_logo" />
+            app:srcCompat="@android:drawable/arrow_down_float"
+            />
     </android.support.v7.widget.Toolbar>
 
     <android.support.v7.widget.RecyclerView

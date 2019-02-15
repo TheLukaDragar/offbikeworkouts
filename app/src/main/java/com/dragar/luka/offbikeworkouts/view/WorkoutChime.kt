@@ -64,6 +64,8 @@ class WorkoutChime(context: WeakReference<Context>) : WorkoutContract.View {
     override fun setPaused() {}
 
     override fun setPlaying() {}
+    override fun setDesc(workoutPos: Int, exerciseMeta: ExerciseMeta, seconds: Int) {
+    }
 
     override fun close() {
         soundPool.release()

@@ -7,13 +7,13 @@ android {
         config {
             keyAlias 'lukadragar'
             keyPassword 'watering111'
-            storeFile file('C:/Users/Luka/Desktop/KEYLUKADRAGAR.jks')
+            storeFile file('C:\\Users\\Mateja Dragar\\Desktop\\KEYLUKADRAGAR.jks')
             storePassword 'watering111'
         }
         realease {
             keyAlias 'lukadragar'
             keyPassword 'watering111'
-            storeFile file('C:/Users/Luka/Desktop/KEYLUKADRAGAR.jks')
+            storeFile file('C:\\Users\\Mateja Dragar\\Desktop\\KEYLUKADRAGAR.jks')
             storePassword 'watering111'
         }
     }
@@ -22,8 +22,8 @@ android {
         applicationId "com.dragar.luka.offbikeworkouts"
         minSdkVersion 16
         targetSdkVersion 28
-        versionCode 7
-        versionName "7.5"
+        versionCode 8
+        versionName "8"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
         multiDexEnabled true

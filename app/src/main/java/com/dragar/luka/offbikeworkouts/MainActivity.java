@@ -19,13 +19,19 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
+import com.dragar.luka.offbikeworkouts.view.OverviewActivity;
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
 
 
 public class MainActivity extends AppCompatActivity {
     public boolean isFirstStart;
     private ActionBar toolbar1;
+    private InterstitialAd mInterstitialAd;
 
 
 
@@ -39,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         MobileAds.initialize(this, "ca-app-pub-4526692710511158~5477844156");
+        startads();
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -101,6 +108,31 @@ public class MainActivity extends AppCompatActivity {
        // t.start();
     }
 
+    private void startads() {
+        mInterstitialAd = new InterstitialAd(this);
+
+
+        mInterstitialAd.setAdUnitId("ca-app-pub-4526692710511158/7659733486");
+        mInterstitialAd.loadAd(new AdRequest.Builder()
+                // .addTestDevice("BDD0B79D56C9AA2F03AB5BBFB78AFCC8")
+                // .addTestDevice("381A1B4E5B4A7F573A066D54374CDD5B")
+                .build());
+        mInterstitialAd.setAdListener(new AdListener() {
+            @Override
+            public void onAdClosed() {
+                // Load the next interstitial.
+                mInterstitialAd.loadAd(new AdRequest.Builder().build());
+                Intent intent = new Intent(MainActivity.this, OverviewActivity.class);
+                //   intent.putExtra(CoverActivity3.WORKOUT_KEY3,"2");
+                //intent.putExtra(WorkoutActivity.TTS_KEY,0);
+                startActivity(intent);
+            }
+
+        });
+
+
+    }
+
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
@@ -127,12 +159,30 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 case R.id.navigation_profile:
                     toolbar1.setTitle("Support");
+
+                    showad();
+
                     fragment = new ProfileFragment();
                     loadFragment(fragment);
                     return true;
             }
 
             return false;
+        }
+
+        private void showad() {
+            if (mInterstitialAd.isLoaded()) {
+                mInterstitialAd.show();
+            } else {
+                Toast.makeText(MainActivity.this, "Ad did not load", Toast.LENGTH_SHORT).show();
+                //Intent intent = new Intent(getActivity(),OverviewActivity.class);
+                //   intent.putExtra(CoverActivity3.WORKOUT_KEY3,"2");
+                //intent.putExtra(WorkoutActivity.TTS_KEY,0);
+                //startActivity(intent);
+
+            }
+
+
         }
     };
     @Override

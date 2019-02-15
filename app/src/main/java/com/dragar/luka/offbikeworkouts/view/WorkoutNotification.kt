@@ -51,7 +51,7 @@ class WorkoutNotification(initService: Service, activityIntent: PendingIntent) :
     private val notificationManagerCompat = NotificationManagerCompat.from(initService)
     private val notificationBuilder = NotificationCompat.Builder(initService, channelID)
             .setVisibility(NotificationCompat.VISIBILITY_PUBLIC) // lock screen controls, with sensitive content
-            .setSmallIcon(R.drawable.ic_logo)
+            .setSmallIcon(R.mipmap.ic_launcher)
             .setColor(ContextCompat.getColor(initService, R.color.colorPrimary))
             .setContentText(initService.getString(R.string.notification_subtitle))
             .setContentIntent(activityIntent)
@@ -125,6 +125,25 @@ class WorkoutNotification(initService: Service, activityIntent: PendingIntent) :
     override fun setPlaying() {
         val notification = notificationBuilder
                 .setShowWhen(true)
+                .build()
+        notificationManagerCompat.notify(notificationID, notification)
+    }
+
+    override fun setDesc(workoutPos: Int, exerciseMeta: ExerciseMeta, seconds: Int) {
+        if (!secondsSet) {
+            val notification = notificationBuilder
+                    .setWhen(System.currentTimeMillis() - (curSecondLimit - seconds) * 1000)
+                    .build()
+            notificationManagerCompat.notify(notificationID, notification)
+            secondsSet = true
+        }
+        val exercise = exerciseMeta.exercise
+        curSecondLimit = exerciseMeta.duration
+        val notification = notificationBuilder
+                .setWhen(System.currentTimeMillis() - 1000)
+                .setContentTitle(String.format(exerciseTitleTemplate,
+                        service.get()?.getString(exercise.titleResource),
+                        curSecondLimit))
                 .build()
         notificationManagerCompat.notify(notificationID, notification)
     }

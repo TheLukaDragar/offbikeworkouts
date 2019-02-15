@@ -11,6 +11,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Toast;
 
 
@@ -21,7 +23,8 @@ import com.dragar.luka.offbikeworkouts.model.ExerciseMeta2;
 import com.dragar.luka.offbikeworkouts.model.Workout2;
 
 import com.dragar.luka.offbikeworkouts.view.CoverActivity2;
-
+import com.dragar.luka.offbikeworkouts.view.OverviewActivity4;
+import com.dragar.luka.offbikeworkouts.view.OverviewActivity5;
 
 
 /**
@@ -82,6 +85,7 @@ public class GiftsFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_gifts, container, false);
+        final Animation fadein = AnimationUtils.loadAnimation(getActivity(),R.anim.fadeinfast);
 
 
 
@@ -89,6 +93,7 @@ public class GiftsFragment extends Fragment {
 
         final CardView card_view = (CardView) v.findViewById(R.id.card_view);
         card_view.setRadius(20);//RADIUS
+        card_view.startAnimation(fadein);
         // creating a CardView and assigning a value.
 
         card_view.setOnClickListener(new View.OnClickListener() {
@@ -130,6 +135,7 @@ public class GiftsFragment extends Fragment {
 
         final CardView card_view2 = (CardView) v.findViewById(R.id.card_view2);
         card_view2.setRadius(20);//RADIUS
+        card_view2.startAnimation(fadein);
         // creating a CardView and assigning a value.
 
         card_view2.setOnClickListener(new View.OnClickListener() {
@@ -147,6 +153,7 @@ public class GiftsFragment extends Fragment {
 
         final CardView card_view3 = (CardView) v.findViewById(R.id.card_view3);
         card_view3.setRadius(20);//RADIUS
+        card_view3.startAnimation(fadein);
         // creating a CardView and assigning a value.
         //Intent intent = new Intent(GiftsFragment.this.getActivity(),Start.class);
        // intent.putExtra("ker","3");
@@ -181,6 +188,48 @@ public class GiftsFragment extends Fragment {
 
 
 
+            }
+        });
+        final CardView card_view4 = v.findViewById(R.id.card_view4);
+        card_view4.setRadius(20);//RADIUS
+        card_view4.startAnimation(fadein);
+        // creating a CardView and assigning a value.
+
+        card_view4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+
+                Intent intent = new Intent(getActivity(), OverviewActivity4.class);
+                //  card_view.startAnimation(zoom);
+
+                startActivity(intent);
+
+
+
+                // do whatever you want to do on click (to launch any fragment or activity you need to put intent here.)
+            }
+        });
+        final CardView card_view5 = v.findViewById(R.id.card_view5);
+        card_view5.setRadius(20);//RADIUS
+        card_view5.startAnimation(fadein);
+        // creating a CardView and assigning a value.
+
+        card_view5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+
+                Intent intent = new Intent(getActivity(), OverviewActivity5.class);
+                //  card_view.startAnimation(zoom);
+
+                startActivity(intent);
+
+
+
+                // do whatever you want to do on click (to launch any fragment or activity you need to put intent here.)
             }
         });
        // Button button = (Button) v.findViewById(R.id.button);

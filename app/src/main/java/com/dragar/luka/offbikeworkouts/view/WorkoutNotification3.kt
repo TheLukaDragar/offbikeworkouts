@@ -51,7 +51,7 @@ class WorkoutNotification3(initService: Service, activityIntent: PendingIntent) 
     private val notificationManagerCompat = NotificationManagerCompat.from(initService)
     private val notificationBuilder = NotificationCompat.Builder(initService, channelID)
             .setVisibility(NotificationCompat.VISIBILITY_PUBLIC) // lock screen controls, with sensitive content
-            .setSmallIcon(R.drawable.ic_logo)
+            .setSmallIcon(R.mipmap.ic_launcher)
             .setColor(ContextCompat.getColor(initService, R.color.colorPrimary))
             .setContentText(initService.getString(R.string.notification_subtitle))
             .setContentIntent(activityIntent)

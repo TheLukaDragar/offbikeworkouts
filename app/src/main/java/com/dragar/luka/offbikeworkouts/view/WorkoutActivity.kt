@@ -50,6 +50,8 @@ import java.lang.ref.WeakReference
 //TODO add view stuff from contract
 
 class WorkoutActivity : AppCompatActivity(), ServiceConnection, WorkoutContract.View {
+
+
     companion object {
         const val TTS_KEY = "audio"
         const val WORKOUT_KEY = "workout"
@@ -220,6 +222,13 @@ class WorkoutActivity : AppCompatActivity(), ServiceConnection, WorkoutContract.
     override fun setSeconds(seconds: Int) {
         runOnUiThread {
             timeTV.text = seconds.toString()
+        }
+    }
+    override fun setDesc(workoutPos: Int, exerciseMeta: ExerciseMeta, seconds: Int) {
+        runOnUiThread {
+            timeTV.text = seconds.toString()
+            workoutPagerOSVP.setCurrentItem(WORKOUT_INDEX_FIRST + workoutPos, true)
+            curWorkoutFragment?.setExercise()
         }
     }
 

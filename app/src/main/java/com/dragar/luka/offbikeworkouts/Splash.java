@@ -39,8 +39,8 @@ public class Splash extends AwesomeSplash {
         /* you don't have to override every property */
 
         //Customize Circular Reveal
-        configSplash.setBackgroundColor(R.color.backdark); //any color you want form colors.xml
-        configSplash.setAnimCircularRevealDuration(2000); //int ms
+        configSplash.setBackgroundColor(R.color.backgroudcolor); //any color you want form colors.xml
+        configSplash.setAnimCircularRevealDuration(1000); //int ms
         configSplash.setRevealFlagX(Flags.REVEAL_RIGHT);  //or Flags.REVEAL_LEFT
         configSplash.setRevealFlagY(Flags.REVEAL_BOTTOM); //or Flags.REVEAL_TOP
 
@@ -48,7 +48,7 @@ public class Splash extends AwesomeSplash {
 
         //Customize Logo
         configSplash.setLogoSplash(R.mipmap.ic_launcher);//or any other drawable
-        configSplash.setAnimLogoSplashDuration(1500); //int ms
+        configSplash.setAnimLogoSplashDuration(1000); //int ms
         configSplash.setAnimLogoSplashTechnique(Techniques.FadeIn); //choose one form Techniques (ref: https://github.com/daimajia/AndroidViewAnimations)
 
 
@@ -56,18 +56,18 @@ public class Splash extends AwesomeSplash {
        // configSplash.setPathSplash(100); //set path String
         configSplash.setOriginalHeight(400); //in relation to your svg (path) resource
         configSplash.setOriginalWidth(400); //in relation to your svg (path) resource
-        configSplash.setAnimPathStrokeDrawingDuration(3000);
+        configSplash.setAnimPathStrokeDrawingDuration(1000);
         configSplash.setPathSplashStrokeSize(3); //I advise value be <5
-        configSplash.setPathSplashStrokeColor(R.color.backgroudcolor); //any color you want form colors.xml
-        configSplash.setAnimPathFillingDuration(1500);
-        configSplash.setPathSplashFillColor(R.color.backdark); //path object filling color
+        configSplash.setPathSplashStrokeColor(R.color.green); //any color you want form colors.xml
+        configSplash.setAnimPathFillingDuration(1000);
+        configSplash.setPathSplashFillColor(R.color.green); //path object filling color
 
 
         //Customize Title
         configSplash.setTitleSplash("I'm Working on it!");
         configSplash.setTitleTextColor(R.color.green);
         configSplash.setTitleTextSize(40f); //float value
-        configSplash.setAnimTitleDuration(1500);
+        configSplash.setAnimTitleDuration(500);
         configSplash.setAnimTitleTechnique(Techniques.FadeInUp);
         //configSplash.setTitleFont("fonts/myfont.ttf"); //provide string to your font located in assets/fonts/
 

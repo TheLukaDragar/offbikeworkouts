@@ -16,11 +16,14 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ScrollView;
+import android.widget.TextView;
 
 import com.dragar.luka.offbikeworkouts.view.CoverActivity;
 import com.dragar.luka.offbikeworkouts.view.OverviewActivity;
 import com.dragar.luka.offbikeworkouts.view.OverviewActivity2;
 import com.dragar.luka.offbikeworkouts.view.OverviewActivity3;
+import com.dragar.luka.offbikeworkouts.view.OverviewActivity4;
+import com.dragar.luka.offbikeworkouts.view.OverviewActivity5;
 
 
 /**
@@ -40,7 +43,7 @@ public class StoreFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    ScrollView mScrollView;
+    ScrollView scrollView;
 
     private OnFragmentInteractionListener mListener;
 
@@ -84,14 +87,17 @@ public class StoreFragment extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_store, container, false);
 
+
         final Animation animation5 =AnimationUtils.loadAnimation(getActivity(),R.anim.lefttoright);
-        final Animation zoom=AnimationUtils.loadAnimation(getActivity(),R.anim.zoomin);
-        ScrollView sroll = (ScrollView) v.findViewById(R.id.animateplz);
-        sroll.startAnimation(animation5);   //  ImageButton imageButton = (ImageButton) v.findViewById(R.id.imageButton);
-       // Button button = (Button) v.findViewById(R.id.button2);
-       // Button button2 = (Button) v.findViewById(R.id.button3);
-        final CardView card_view = (CardView) v.findViewById(R.id.card_view);
-        card_view.setRadius(20);//RADIUS
+        final Animation fadein =AnimationUtils.loadAnimation(getActivity(),R.anim.fadeinfast);
+        ScrollView scrollView = (ScrollView) v.findViewById(R.id.animateplz);
+       // scroll.scrollTo(0, scroll.getBottom());
+        //sroll.scrollTo(10, 0);
+        //sroll.startAnimation(animation5);
+
+        final CardView card_view = v.findViewById(R.id.card_view);
+        card_view.setRadius(20);
+        card_view.startAnimation(fadein);//RADIUS
        // creating a CardView and assigning a value.
 
         card_view.setOnClickListener(new View.OnClickListener() {
@@ -101,7 +107,6 @@ public class StoreFragment extends Fragment {
 
 
                 Intent intent = new Intent(getActivity(),OverviewActivity.class);
-              //  card_view.startAnimation(zoom);
 
                 startActivity(intent);
 
@@ -110,8 +115,11 @@ public class StoreFragment extends Fragment {
                 // do whatever you want to do on click (to launch any fragment or activity you need to put intent here.)
             }
         });
-        CardView card_view2 = (CardView) v.findViewById(R.id.card_view2);
-        card_view2.setRadius(20);//RADIUS
+        CardView card_view2 = v.findViewById(R.id.card_view2);
+        card_view2.setRadius(20);
+        card_view2.startAnimation(fadein);
+
+        //RADIUS
         // creating a CardView and assigning a value.
 
         card_view2.setOnClickListener(new View.OnClickListener() {
@@ -126,8 +134,10 @@ public class StoreFragment extends Fragment {
                 // do whatever you want to do on click (to launch any fragment or activity you need to put intent here.)
             }
         });
-        CardView card_view3 = (CardView) v.findViewById(R.id.card_view3);
+        CardView card_view3 = v.findViewById(R.id.card_view3);
         card_view3.setRadius(20);//RADIUS
+        card_view3.startAnimation(fadein);
+
         // creating a CardView and assigning a value.
 
         card_view3.setOnClickListener(new View.OnClickListener() {
@@ -143,18 +153,50 @@ public class StoreFragment extends Fragment {
             }
         });
 
+        final CardView card_view4 = v.findViewById(R.id.card_view4);
+        card_view4.setRadius(20);//RADIUS
+        card_view4.startAnimation(fadein);
+        // creating a CardView and assigning a value.
+
+        card_view4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
 
 
+                Intent intent = new Intent(getActivity(),OverviewActivity4.class);
+                //  card_view.startAnimation(zoom);
+
+                startActivity(intent);
 
 
 
-        //imageButton.setOnClickListener(new View.OnClickListener() {
-        //    @Override
-         //   public void onClick(View view) {
+                // do whatever you want to do on click (to launch any fragment or activity you need to put intent here.)
+            }
+        });
+        final CardView card_view5 = v.findViewById(R.id.card_view5);
+        card_view5.setRadius(20);//RADIUS
+        card_view5.startAnimation(fadein);
+        //sroll.scrollTo(0, 0);
+        // creating a CardView and assigning a value.
 
-         //   }
-      //  });
+        card_view5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+
+                Intent intent = new Intent(getActivity(), OverviewActivity5.class);
+                //  card_view.startAnimation(zoom);
+
+                startActivity(intent);
+
+
+
+                // do whatever you want to do on click (to launch any fragment or activity you need to put intent here.)
+            }
+        });
+
 
         return v;
     }

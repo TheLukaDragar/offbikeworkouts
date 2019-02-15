@@ -41,6 +41,7 @@ interface WorkoutContract {
     interface View {
         // todo add change exercise separately from setExercise, for both service and views fun changeExercise(workoutPos: Int, exerciseMeta: ExerciseMeta)
         fun setExercise(workoutPos: Int, exerciseMeta: ExerciseMeta)
+        fun setDesc(workoutPos: Int, exerciseMeta: ExerciseMeta, seconds: Int)
         fun setBreak(workoutPos: Int, nextExerciseMeta: ExerciseMeta, breakLength: Int)
         fun showFinish()
 

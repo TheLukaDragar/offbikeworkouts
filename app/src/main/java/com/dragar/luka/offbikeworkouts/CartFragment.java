@@ -5,9 +5,12 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -16,7 +19,10 @@ import com.dragar.luka.offbikeworkouts.model.Workout;
 import com.dragar.luka.offbikeworkouts.view.CoverActivity;
 import com.dragar.luka.offbikeworkouts.view.CoverActivity3;
 import com.dragar.luka.offbikeworkouts.view.OverviewActivity;
+import com.dragar.luka.offbikeworkouts.view.OverviewActivity2;
 import com.dragar.luka.offbikeworkouts.view.OverviewActivity3;
+import com.dragar.luka.offbikeworkouts.view.OverviewActivity4;
+import com.dragar.luka.offbikeworkouts.view.OverviewActivity5;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
@@ -83,6 +89,8 @@ public class CartFragment extends Fragment {
         // Inflate the layout for this fragment
         View v1 = inflater.inflate(R.layout.fragment_cart, container, false);
 
+        final Animation fadein = AnimationUtils.loadAnimation(getActivity(),R.anim.fadeinfast);
+
         mInterstitialAd = new InterstitialAd(getActivity());
 
 
@@ -105,13 +113,29 @@ public class CartFragment extends Fragment {
         });
 
 
-        Button button5 = (Button) v1.findViewById(R.id.button3);
-        button5.setOnClickListener(new View.OnClickListener() {
+       // Button button5 = (Button) v1.findViewById(R.id.button3);
+      //  button5.setOnClickListener(new View.OnClickListener() {
 
 
 
+           // @Override
+           // public void onClick(View view) {
+
+
+
+
+         //   }
+       // });
+        final CardView card_view = v1.findViewById(R.id.card_view);
+        card_view.setRadius(20);
+        card_view.startAnimation(fadein);//RADIUS
+        // creating a CardView and assigning a value.
+
+        card_view.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
+
+
 
                 if (mInterstitialAd.isLoaded()) {
                     mInterstitialAd.show();
@@ -125,6 +149,114 @@ public class CartFragment extends Fragment {
                 }
 
 
+
+                // do whatever you want to do on click (to launch any fragment or activity you need to put intent here.)
+            }
+        });
+        CardView card_view2 = v1.findViewById(R.id.card_view2);
+        card_view2.setRadius(20);
+        card_view2.startAnimation(fadein);
+
+        //RADIUS
+        // creating a CardView and assigning a value.
+
+        card_view2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                if (mInterstitialAd.isLoaded()) {
+                    mInterstitialAd.show();
+                } else {
+                    Toast.makeText(getActivity(), "Ad did not load", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(getActivity(),OverviewActivity.class);
+                    //   intent.putExtra(CoverActivity3.WORKOUT_KEY3,"2");
+                    //intent.putExtra(WorkoutActivity.TTS_KEY,0);
+                    startActivity(intent);
+
+                }
+
+
+                // do whatever you want to do on click (to launch any fragment or activity you need to put intent here.)
+            }
+        });
+        CardView card_view3 = v1.findViewById(R.id.card_view3);
+        card_view3.setRadius(20);//RADIUS
+        card_view3.startAnimation(fadein);
+
+        // creating a CardView and assigning a value.
+
+        card_view3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v1) {
+
+
+                if (mInterstitialAd.isLoaded()) {
+                    mInterstitialAd.show();
+                } else {
+                    Toast.makeText(getActivity(), "Ad did not load", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(getActivity(),OverviewActivity.class);
+                    //   intent.putExtra(CoverActivity3.WORKOUT_KEY3,"2");
+                    //intent.putExtra(WorkoutActivity.TTS_KEY,0);
+                    startActivity(intent);
+
+                }
+
+
+                // do whatever you want to do on click (to launch any fragment or activity you need to put intent here.)
+            }
+        });
+
+        final CardView card_view4 = v1.findViewById(R.id.card_view4);
+        card_view4.setRadius(20);//RADIUS
+        card_view4.startAnimation(fadein);
+        // creating a CardView and assigning a value.
+
+        card_view4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v1) {
+
+
+
+                if (mInterstitialAd.isLoaded()) {
+                    mInterstitialAd.show();
+                } else {
+                    Toast.makeText(getActivity(), "Ad did not load", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(getActivity(),OverviewActivity.class);
+                    //   intent.putExtra(CoverActivity3.WORKOUT_KEY3,"2");
+                    //intent.putExtra(WorkoutActivity.TTS_KEY,0);
+                    startActivity(intent);
+
+                }
+
+
+                // do whatever you want to do on click (to launch any fragment or activity you need to put intent here.)
+            }
+        });
+        final CardView card_view5 = v1.findViewById(R.id.card_view5);
+        card_view5.setRadius(20);//RADIUS
+        card_view5.startAnimation(fadein);
+        // creating a CardView and assigning a value.
+
+        card_view5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v1) {
+
+
+
+                if (mInterstitialAd.isLoaded()) {
+                    mInterstitialAd.show();
+                } else {
+                    Toast.makeText(getActivity(), "Ad did not load", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(getActivity(),OverviewActivity.class);
+                    //   intent.putExtra(CoverActivity3.WORKOUT_KEY3,"2");
+                    //intent.putExtra(WorkoutActivity.TTS_KEY,0);
+                    startActivity(intent);
+
+                }
+
+
+                // do whatever you want to do on click (to launch any fragment or activity you need to put intent here.)
             }
         });
         return v1;

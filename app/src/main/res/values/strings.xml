@@ -40,6 +40,7 @@
 
     <string name="next_label">Next up: %s</string>
     <string name="audio_halftime">%d seconds left</string>
+    <string name="audio_fourthtime">%d lalalalalalalala</string>
     <string name="audio_break">Break!</string>
     <string name="audio_done">You did it!</string>
     <string name="notification_subtitle">Touch to get back</string>

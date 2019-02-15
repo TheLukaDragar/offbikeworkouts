@@ -26,12 +26,15 @@ import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
+import com.google.firebase.analytics.FirebaseAnalytics;
+
 
 
 public class MainActivity extends AppCompatActivity {
     public boolean isFirstStart;
     private ActionBar toolbar1;
     private InterstitialAd mInterstitialAd;
+    private FirebaseAnalytics mFirebaseAnalytics;
 
 
 
@@ -45,7 +48,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         MobileAds.initialize(this, "ca-app-pub-4526692710511158~5477844156");
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         startads();
+
+       // Bundle bundle = new Bundle();
+        //bundle.putString(FirebaseAnalytics.Param.ITEM_ID, String.valueOf((R.id.navigation_cart)));
+        //bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, String.valueOf(R.id.navigation_cart));
+        //bundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "NAVIGATION");
+        //mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, bundle);
+
+
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -151,6 +163,7 @@ public class MainActivity extends AppCompatActivity {
                     toolbar1.setTitle("Streching");
                     fragment = new GiftsFragment();
                     loadFragment(fragment);
+
                     return true;
                 case R.id.navigation_cart:
                     toolbar1.setTitle("HIT Workouts");

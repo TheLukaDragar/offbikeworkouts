@@ -24,6 +24,7 @@ import com.dragar.luka.offbikeworkouts.view.OverviewActivity2;
 import com.dragar.luka.offbikeworkouts.view.OverviewActivity3;
 import com.dragar.luka.offbikeworkouts.view.OverviewActivity4;
 import com.dragar.luka.offbikeworkouts.view.OverviewActivity5;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 
 /**
@@ -43,6 +44,7 @@ public class StoreFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    private FirebaseAnalytics mFirebaseAnalytics;
     ScrollView scrollView;
 
     private OnFragmentInteractionListener mListener;
@@ -86,6 +88,7 @@ public class StoreFragment extends Fragment {
 
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_store, container, false);
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(getActivity());
 
 
         final Animation animation5 =AnimationUtils.loadAnimation(getActivity(),R.anim.lefttoright);
@@ -103,6 +106,11 @@ public class StoreFragment extends Fragment {
         card_view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Bundle params = new Bundle();
+                String name= "test";
+                params.putString("image_name", name);
+
+                mFirebaseAnalytics.logEvent("main_opened", params);
 
 
 

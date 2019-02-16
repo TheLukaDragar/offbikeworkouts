@@ -25,11 +25,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+
         </activity>
         <activity
             android:name=".MyIntro"
@@ -39,6 +41,17 @@
             android:label="@string/title_activity_main2"
             android:theme="@style/AppTheme">
 
+            <tools:validation testUrl="https://offbikeworkouts.com/test" />
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https"
+                    android:host="offbikeworkouts.com" />
+            </intent-filter>
         </activity>
         <activity android:name=".view.OverviewActivity">
             <intent-filter>

@@ -73,6 +73,7 @@ public class ProfileFragment extends Fragment {
 
 
 
+
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);

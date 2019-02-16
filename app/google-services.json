@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "503706127720-5likhf9gj6vkkfig92asaegovmu0vmkf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dragar.luka.offbikeworkouts",
+            "certificate_hash": "f46550f5e45afe5494ef10f8eb92397ac8ddc2d8"
+          }
+        },
+        {
           "client_id": "503706127720-8g73nd701fi7ij354uo1almb4ilcd4k0.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,13 +37,19 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "503706127720-8g73nd701fi7ij354uo1almb4ilcd4k0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
         }
-      }
+      },
+      "admob_app_id": "ca-app-pub-4526692710511158~5477844156"
     }
   ],
   "configuration_version": "1"

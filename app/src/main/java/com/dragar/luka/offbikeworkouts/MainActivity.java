@@ -14,6 +14,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.ActionMode;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -26,13 +27,17 @@ import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.analytics.FirebaseAnalytics;
-
+import com.google.firebase.dynamiclinks.FirebaseDynamicLinks;
+import com.google.firebase.dynamiclinks.PendingDynamicLinkData;
 
 
 public class MainActivity extends AppCompatActivity {
+    private static final String TAG = "MainActivity";
     public boolean isFirstStart;
-    private ActionBar toolbar1;
+    public ActionBar toolbar1;
     private InterstitialAd mInterstitialAd;
     private FirebaseAnalytics mFirebaseAnalytics;
 
@@ -50,12 +55,21 @@ public class MainActivity extends AppCompatActivity {
         MobileAds.initialize(this, "ca-app-pub-4526692710511158~5477844156");
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         startads();
+        Bundle params = new Bundle();
+        String name= "test";
+        params.putString("image_name", name);
+
+        mFirebaseAnalytics.logEvent("my_event", params);
+
+
+
+
 
        // Bundle bundle = new Bundle();
         //bundle.putString(FirebaseAnalytics.Param.ITEM_ID, String.valueOf((R.id.navigation_cart)));
         //bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, String.valueOf(R.id.navigation_cart));
         //bundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "NAVIGATION");
-        //mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, bundle);
+       // mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, bundle);
 
 
 
@@ -164,6 +178,7 @@ public class MainActivity extends AppCompatActivity {
                     fragment = new GiftsFragment();
                     loadFragment(fragment);
 
+
                     return true;
                 case R.id.navigation_cart:
                     toolbar1.setTitle("HIT Workouts");
@@ -210,6 +225,7 @@ public class MainActivity extends AppCompatActivity {
         transaction.replace(R.id.frame_container, fragment);
         transaction.addToBackStack(null);
         transaction.commit();
+
     }
 
 

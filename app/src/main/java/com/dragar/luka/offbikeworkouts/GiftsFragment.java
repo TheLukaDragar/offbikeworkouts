@@ -168,8 +168,12 @@ public class GiftsFragment extends Fragment {
                 R.string.Firstplank,
                0xff0B65DB,
               new ExerciseMeta2[]{new ExerciseMeta2(
-                      new Exercise2(R.string.exercise_title_plank,R.string.exercise_desc_plank,R.drawable.exercise_plank)
-                      ,30,false)},30);
+                      new Exercise2(R.string.exercise_title_plank,
+                              R.string.exercise_desc_plank,
+                              R.drawable.exercise_plank)
+                      ,30,
+                      false)},
+              30);
 
 
        // R.string.exercise_title_laterallungetotricepsextension,

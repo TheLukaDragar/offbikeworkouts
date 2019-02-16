@@ -18,7 +18,7 @@ import com.viksaa.sssplash.lib.cnst.Flags;
 import com.viksaa.sssplash.lib.model.ConfigSplash;
 
 public class Splash extends AwesomeSplash {
-    private FirebaseAnalytics mFirebaseAnalytics;
+   // private FirebaseAnalytics mFirebaseAnalytics;
    // private InterstitialAd mInterstitialAd;
 
     //DO NOT OVERRIDE onCreate()!
@@ -28,7 +28,7 @@ public class Splash extends AwesomeSplash {
     @Override
     public void initSplash(ConfigSplash configSplash) {
 
-        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
+      // mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
       //  MobileAds.initialize(this, "ca-app-pub-4526692710511158~5477844156");
        // mInterstitialAd = new InterstitialAd(this);
 

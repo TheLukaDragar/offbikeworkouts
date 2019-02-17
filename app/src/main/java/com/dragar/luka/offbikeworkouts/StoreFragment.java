@@ -100,7 +100,7 @@ public class StoreFragment extends Fragment {
 
         final CardView card_view = v.findViewById(R.id.card_view);
         card_view.setRadius(20);
-        card_view.startAnimation(fadein);//RADIUS
+       // card_view.startAnimation(fadein);//RADIUS
        // creating a CardView and assigning a value.
 
         card_view.setOnClickListener(new View.OnClickListener() {
@@ -125,7 +125,7 @@ public class StoreFragment extends Fragment {
         });
         CardView card_view2 = v.findViewById(R.id.card_view2);
         card_view2.setRadius(20);
-        card_view2.startAnimation(fadein);
+        //card_view2.startAnimation(fadein);
 
         //RADIUS
         // creating a CardView and assigning a value.
@@ -144,7 +144,7 @@ public class StoreFragment extends Fragment {
         });
         CardView card_view3 = v.findViewById(R.id.card_view3);
         card_view3.setRadius(20);//RADIUS
-        card_view3.startAnimation(fadein);
+        //card_view3.startAnimation(fadein);
 
         // creating a CardView and assigning a value.
 
@@ -163,7 +163,7 @@ public class StoreFragment extends Fragment {
 
         final CardView card_view4 = v.findViewById(R.id.card_view4);
         card_view4.setRadius(20);//RADIUS
-        card_view4.startAnimation(fadein);
+        //card_view4.startAnimation(fadein);
         // creating a CardView and assigning a value.
 
         card_view4.setOnClickListener(new View.OnClickListener() {

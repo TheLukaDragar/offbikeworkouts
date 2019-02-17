@@ -293,6 +293,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void Settings(MenuItem item) {
+       // Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+        //   intent.putExtra(CoverActivity3.WORKOUT_KEY3,"2");
+        //intent.putExtra(WorkoutActivity.TTS_KEY,0);
+       // startActivity(intent);
+
+    }
 }
 
 

@@ -16,7 +16,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/backdark"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layoutAnimation="@anim/layout_animation_fall_down">
 
         <include
             android:id="@+id/toolbar"
@@ -28,7 +29,8 @@
             android:id="@+id/card_view"
             android:layout_width="match_parent"
             android:layout_height="135dp"
-            android:layout_margin="8dp">
+            android:layout_margin="8dp"
+            >
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -80,9 +82,9 @@
                     android:layout_marginTop="-108dp"
                     android:maxLines="3"
                     android:padding="8dp"
-                    android:text="1"
+                    android:text="1aaaaa"
                     android:textColor="@android:color/background_light"
-                    android:textSize="22dp"
+                    android:textSize="22sp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -125,7 +127,7 @@
                     android:layout_marginTop="-99dp"
                     android:maxLines="3"
                     android:padding="8dp"
-                    android:text="2"
+                    android:text="2aaa"
                     android:textColor="@android:color/background_light"
                     android:textSize="22dp"
                     android:textStyle="bold" />
@@ -184,7 +186,7 @@
                     android:layout_marginTop="-85dp"
                     android:maxLines="3"
                     android:padding="8dp"
-                    android:text="3"
+                    android:text="aaaaa"
                     android:textColor="@android:color/background_light"
                     android:textSize="22dp"
                     android:textStyle="bold" />
@@ -243,7 +245,7 @@
                     android:layout_marginTop="-85dp"
                     android:maxLines="3"
                     android:padding="8dp"
-                    android:text="4"
+                    android:text="4aaaaaaaa"
                     android:textColor="@android:color/background_light"
                     android:textSize="22dp"
                     android:textStyle="bold" />

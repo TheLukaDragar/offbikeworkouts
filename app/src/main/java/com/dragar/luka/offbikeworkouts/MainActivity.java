@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         params.putString("image_name", name);
 
         mFirebaseAnalytics.logEvent("my_event", params);
+
 
 
 

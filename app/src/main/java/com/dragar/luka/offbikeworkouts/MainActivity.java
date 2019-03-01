@@ -7,31 +7,22 @@ import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
-import android.view.ActionMode;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-import com.dragar.luka.offbikeworkouts.view.OverviewActivity;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.analytics.FirebaseAnalytics;
-import com.google.firebase.dynamiclinks.FirebaseDynamicLinks;
-import com.google.firebase.dynamiclinks.PendingDynamicLinkData;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -87,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
 
         toolbar1.setTitle("Core");
 
-        loadFragment(new StoreFragment());
+        loadFragment(new CoreFragment());
 
 
 
@@ -147,11 +138,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onAdClosed() {
                 // Load the next interstitial.
-                mInterstitialAd.loadAd(new AdRequest.Builder().build());
-                Intent intent = new Intent(MainActivity.this, OverviewActivity.class);
+             //   mInterstitialAd.loadAd(new AdRequest.Builder().build());
+               // Intent intent = new Intent(MainActivity.this, OverviewActivity.class);
                 //   intent.putExtra(CoverActivity3.WORKOUT_KEY3,"2");
                 //intent.putExtra(WorkoutActivity.TTS_KEY,0);
-                startActivity(intent);
+               /// startActivity(intent);
             }
 
         });
@@ -170,19 +161,19 @@ public class MainActivity extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.navigation_shop:
                     toolbar1.setTitle("Core Workouts");
-                    fragment = new StoreFragment();
+                    fragment = new CoreFragment();
                     loadFragment(fragment);
                     return true;
                 case R.id.navigation_gifts:
                     toolbar1.setTitle("Streching");
-                    fragment = new GiftsFragment();
+                    fragment = new StrechFragment();
                     loadFragment(fragment);
 
 
                     return true;
                 case R.id.navigation_cart:
                     toolbar1.setTitle("HIT Workouts");
-                    fragment = new CartFragment();
+                    fragment = new HitFragment();
                     loadFragment(fragment);
                     return true;
                 case R.id.navigation_profile:
@@ -293,12 +284,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void Settings(MenuItem item) {
-       // Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
-        //   intent.putExtra(CoverActivity3.WORKOUT_KEY3,"2");
-        //intent.putExtra(WorkoutActivity.TTS_KEY,0);
-       // startActivity(intent);
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
 
+        if (id == R.id.action_settings) {
+            // launch settings activity
+            startActivity(new Intent(MainActivity.this, SettingsActivity.class));
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }
 

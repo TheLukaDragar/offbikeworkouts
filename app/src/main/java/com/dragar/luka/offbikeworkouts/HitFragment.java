@@ -11,34 +11,24 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.Button;
 import android.widget.Toast;
 
 
-import com.dragar.luka.offbikeworkouts.model.Workout;
-import com.dragar.luka.offbikeworkouts.view.CoverActivity;
-import com.dragar.luka.offbikeworkouts.view.CoverActivity3;
 import com.dragar.luka.offbikeworkouts.view.OverviewActivity;
-import com.dragar.luka.offbikeworkouts.view.OverviewActivity2;
-import com.dragar.luka.offbikeworkouts.view.OverviewActivity3;
-import com.dragar.luka.offbikeworkouts.view.OverviewActivity4;
-import com.dragar.luka.offbikeworkouts.view.OverviewActivity5;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
-
-import java.util.List;
 
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link CartFragment.OnFragmentInteractionListener} interface
+ * {@link HitFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link CartFragment#newInstance} factory method to
+ * Use the {@link HitFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class CartFragment extends Fragment {
+public class HitFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -52,7 +42,7 @@ public class CartFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public CartFragment() {
+    public HitFragment() {
         // Required empty public constructor
     }
 
@@ -62,11 +52,11 @@ public class CartFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment CartFragment.
+     * @return A new instance of fragment HitFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static CartFragment newInstance(String param1, String param2) {
-        CartFragment fragment = new CartFragment();
+    public static HitFragment newInstance(String param1, String param2) {
+        HitFragment fragment = new HitFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -87,7 +77,7 @@ public class CartFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v1 = inflater.inflate(R.layout.fragment_cart, container, false);
+        View v1 = inflater.inflate(R.layout.fragment_hit, container, false);
 
         final Animation fadein = AnimationUtils.loadAnimation(getActivity(),R.anim.fadeinfast);
 
@@ -128,7 +118,7 @@ public class CartFragment extends Fragment {
        // });
         final CardView card_view = v1.findViewById(R.id.card_view);
         card_view.setRadius(20);
-        card_view.startAnimation(fadein);//RADIUS
+    //    card_view.startAnimation(fadein);//RADIUS
         // creating a CardView and assigning a value.
 
         card_view.setOnClickListener(new View.OnClickListener() {
@@ -155,7 +145,7 @@ public class CartFragment extends Fragment {
         });
         CardView card_view2 = v1.findViewById(R.id.card_view2);
         card_view2.setRadius(20);
-        card_view2.startAnimation(fadein);
+       // card_view2.startAnimation(fadein);
 
         //RADIUS
         // creating a CardView and assigning a value.
@@ -182,7 +172,7 @@ public class CartFragment extends Fragment {
         });
         CardView card_view3 = v1.findViewById(R.id.card_view3);
         card_view3.setRadius(20);//RADIUS
-        card_view3.startAnimation(fadein);
+      //  card_view3.startAnimation(fadein);
 
         // creating a CardView and assigning a value.
 
@@ -209,7 +199,7 @@ public class CartFragment extends Fragment {
 
         final CardView card_view4 = v1.findViewById(R.id.card_view4);
         card_view4.setRadius(20);//RADIUS
-        card_view4.startAnimation(fadein);
+        //card_view4.startAnimation(fadein);
         // creating a CardView and assigning a value.
 
         card_view4.setOnClickListener(new View.OnClickListener() {
@@ -235,7 +225,7 @@ public class CartFragment extends Fragment {
         });
         final CardView card_view5 = v1.findViewById(R.id.card_view5);
         card_view5.setRadius(20);//RADIUS
-        card_view5.startAnimation(fadein);
+      //  card_view5.startAnimation(fadein);
         // creating a CardView and assigning a value.
 
         card_view5.setOnClickListener(new View.OnClickListener() {

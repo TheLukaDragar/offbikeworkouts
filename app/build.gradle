@@ -8,13 +8,13 @@ android {
         config {
             keyAlias 'lukadragar'
             keyPassword 'watering111'
-            storeFile file('C:\\Users\\Luka\\Desktop\\KEYLUKADRAGAR.jks')
+            storeFile file('C:\\Users\\Mateja Dragar\\Desktop\\KEYLUKADRAGAR.jks')
             storePassword 'watering111'
         }
         realease {
             keyAlias 'lukadragar'
             keyPassword 'watering111'
-            storeFile file('C:\\Users\\Luka\\Desktop\\KEYLUKADRAGAR.jks')
+            storeFile file('C:\\Users\\Mateja Dragar\\Desktop\\KEYLUKADRAGAR.jks')
             storePassword 'watering111'
         }
     }
@@ -70,6 +70,7 @@ dependencies {
     implementation 'com.android.support:multidex:1.0.3'
     implementation 'com.google.firebase:firebase-inappmessaging-display:17.0.5'
     implementation 'com.android.support:preference-v7:28.0.0'
+
 }
 repositories {
     mavenCentral()

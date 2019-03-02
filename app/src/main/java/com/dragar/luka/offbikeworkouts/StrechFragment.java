@@ -2,9 +2,11 @@ package com.dragar.luka.offbikeworkouts;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
@@ -13,6 +15,8 @@ import android.view.ViewGroup;
 
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.view.animation.LayoutAnimationController;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 
@@ -85,7 +89,31 @@ public class StrechFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_strech, container, false);
-        final Animation fadein = AnimationUtils.loadAnimation(getActivity(),R.anim.fadeinfast);
+
+
+
+
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
+        boolean animate;
+
+        animate = prefs.getBoolean("animationonoff",true);
+        if (animate){
+            // android:animation="@anim/item_animation_fall_down"
+            String speed = prefs.getString("animationspeed","300");
+            final Animation itemfalldown =AnimationUtils.loadAnimation(getActivity(),R.anim.item_animation_fall_down);
+
+            assert speed != null;
+            itemfalldown.setDuration(Long.parseLong(speed));
+
+            LinearLayout layout = v.findViewById(R.id.strechlayout);
+            LayoutAnimationController anim = AnimationUtils.loadLayoutAnimation(getActivity(), R.anim.layout_animation_fall_down);
+            anim.setAnimation(itemfalldown);
+            layout.setLayoutAnimation(anim);
+        }
+        if (!animate){ LinearLayout layout = v.findViewById(R.id.strechlayout);
+            final Animation fadein =AnimationUtils.loadAnimation(getActivity(),R.anim.fadeinfast);
+            layout.startAnimation(fadein);
+        }
 
 
 
@@ -153,7 +181,7 @@ public class StrechFragment extends Fragment {
 
         final CardView card_view3 = (CardView) v.findViewById(R.id.card_view3);
         card_view3.setRadius(20);//RADIUS
-        card_view3.startAnimation(fadein);
+       // card_view3.startAnimation(fadein);
         // creating a CardView and assigning a value.
         //Intent intent = new Intent(StrechFragment.this.getActivity(),Start.class);
        // intent.putExtra("ker","3");

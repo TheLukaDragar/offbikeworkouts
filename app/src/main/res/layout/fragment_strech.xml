@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:isScrollContainer="true"
-        tools:context=".CoreFragment"
+        tools:context=".StrechFragment"
         >
 
 
@@ -31,8 +31,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/backdark"
-            android:orientation="vertical"
-            android:layoutAnimation="@anim/layout_animation_fall_down">
+            android:id="@+id/strechlayout"
+            android:orientation="vertical">
 
             <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
                 android:id="@+id/card_view"

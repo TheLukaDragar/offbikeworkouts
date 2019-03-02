@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <PreferenceCategory android:title="General">
+    <PreferenceCategory
+        android:title="General"
+       >
         <EditTextPreference
             android:defaultValue="@string/default_gallery_storage"
             android:key="@string/key_gallery_name"
@@ -53,6 +56,7 @@
         <Preference
 
             android:key="speak"
+
             android:title="@string/test_voice">
 
         </Preference>
@@ -67,6 +71,26 @@
 
             android:key="downloadmore"
             android:title="Download TTS" />
+
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Animations">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="animationonoff"
+            android:title="Animations" />
+
+        <ListPreference
+            android:dependency="animationonoff"
+            android:defaultValue="2"
+            android:dialogTitle="Animation speed"
+            android:entries="@array/animationspeed"
+            android:entryValues="@array/animationspeedvalues"
+            android:key="animationspeed"
+            android:summary="Set the animation speed"
+            android:title="Animation speed" />
+
 
 
     </PreferenceCategory>

@@ -12,10 +12,10 @@
 
 
     <LinearLayout
+        android:id="@+id/corelayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="@color/backdark"
-        android:layoutAnimation="@anim/layout_animation_fall_down"
         android:orientation="vertical"
         android:theme="@style/CoreTheme">
 
@@ -67,7 +67,7 @@
                     android:padding="8dp"
                     android:text="@string/ed"
                     android:textColor="@android:color/background_light"
-                    android:textSize="14dp" />
+                    android:textSize="14sp" />
 
                 <TextView
                     android:id="@+id/title"

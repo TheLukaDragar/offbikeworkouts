@@ -2,8 +2,10 @@ package com.dragar.luka.offbikeworkouts;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
@@ -11,6 +13,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.view.animation.LayoutAnimationController;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 
@@ -79,7 +83,27 @@ public class HitFragment extends Fragment {
         // Inflate the layout for this fragment
         View v1 = inflater.inflate(R.layout.fragment_hit, container, false);
 
-        final Animation fadein = AnimationUtils.loadAnimation(getActivity(),R.anim.fadeinfast);
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
+        boolean animate;
+
+        animate = prefs.getBoolean("animationonoff",true);
+        if (animate){
+            // android:animation="@anim/item_animation_fall_down"
+            String speed = prefs.getString("animationspeed","300");
+            final Animation itemfalldown =AnimationUtils.loadAnimation(getActivity(),R.anim.item_animation_fall_down);
+
+            assert speed != null;
+            itemfalldown.setDuration(Long.parseLong(speed));
+
+            LinearLayout layout = v1.findViewById(R.id.hitlayout);
+            LayoutAnimationController anim = AnimationUtils.loadLayoutAnimation(getActivity(), R.anim.layout_animation_fall_down);
+            anim.setAnimation(itemfalldown);
+            layout.setLayoutAnimation(anim);
+        }
+        if (!animate){ LinearLayout layout = v1.findViewById(R.id.hitlayout);
+            final Animation fadein =AnimationUtils.loadAnimation(getActivity(),R.anim.fadeinfast);
+            layout.startAnimation(fadein);
+        }
 
         mInterstitialAd = new InterstitialAd(getActivity());
 

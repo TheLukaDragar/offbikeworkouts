@@ -14,4 +14,16 @@
         <item>3</item>
         <item>4</item>
     </string-array>
+    <string-array name="animationspeed">
+        <item>slow</item>
+        <item>normal</item>
+        <item>fast</item>
+        <item>really fast</item>
+    </string-array>
+    <string-array name="animationspeedvalues">
+        <item>600</item>
+        <item>300</item>
+        <item>230</item>
+        <item>100</item>
+    </string-array>
 </resources>

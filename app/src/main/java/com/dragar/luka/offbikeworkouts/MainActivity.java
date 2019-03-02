@@ -3,7 +3,10 @@ package com.dragar.luka.offbikeworkouts;
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
+import android.os.Handler;
+import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
@@ -31,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     public ActionBar toolbar1;
     private InterstitialAd mInterstitialAd;
     private FirebaseAnalytics mFirebaseAnalytics;
+    boolean doubleBackToExitPressedOnce = false;
 
 
 
@@ -44,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         MobileAds.initialize(this, "ca-app-pub-4526692710511158~5477844156");
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         startads();
@@ -52,6 +57,13 @@ public class MainActivity extends AppCompatActivity {
         params.putString("image_name", name);
 
         mFirebaseAnalytics.logEvent("my_event", params);
+
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        String duration = prefs.getString("key_gallery_name","");
+       // android:duration="@integer/anim_duration_long"
+
+      //  Toast.makeText(this,
+           //     duration, Toast.LENGTH_LONG).show();
 
 
 
@@ -236,11 +248,26 @@ public class MainActivity extends AppCompatActivity {
 
 
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.navigation);
+
         int seletedItemId = bottomNavigationView.getSelectedItemId();
         if (R.id.navigation_shop != seletedItemId) {
             setHomeItem(MainActivity.this);
         } else {
-            finish();
+            if (doubleBackToExitPressedOnce) {
+                finish();
+                return;
+            }
+
+            this.doubleBackToExitPressedOnce = true;
+            Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show();
+
+            new Handler().postDelayed(new Runnable() {
+
+                @Override
+                public void run() {
+                    doubleBackToExitPressedOnce=false;
+                }
+            }, 2000);
         }
     }
 

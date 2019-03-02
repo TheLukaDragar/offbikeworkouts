@@ -2,16 +2,22 @@ package com.dragar.luka.offbikeworkouts;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
+import android.view.animation.AnimationSet;
 import android.view.animation.AnimationUtils;
+import android.view.animation.LayoutAnimationController;
+import android.widget.LinearLayout;
 import android.widget.ScrollView;
+import android.widget.Toast;
 
 import com.dragar.luka.offbikeworkouts.view.OverviewActivity;
 import com.dragar.luka.offbikeworkouts.view.OverviewActivity2;
@@ -60,6 +66,7 @@ public class CoreFragment extends Fragment {
     // TODO: Rename and change types and number of parameters
     public static CoreFragment newInstance(String param1, String param2) {
         CoreFragment fragment = new CoreFragment();
+
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -74,15 +81,46 @@ public class CoreFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_core, container, false);
+
+
+
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(getActivity());
+
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
+        boolean animate;
+
+        animate = prefs.getBoolean("animationonoff",true);
+      if (animate){
+          // android:animation="@anim/item_animation_fall_down"
+          String speed = prefs.getString("animationspeed","300");
+          final Animation itemfalldown =AnimationUtils.loadAnimation(getActivity(),R.anim.item_animation_fall_down);
+
+          assert speed != null;
+          itemfalldown.setDuration(Long.parseLong(speed));
+
+          LinearLayout layout = v.findViewById(R.id.corelayout);
+          LayoutAnimationController anim = AnimationUtils.loadLayoutAnimation(getActivity(), R.anim.layout_animation_fall_down);
+          anim.setAnimation(itemfalldown);
+          layout.setLayoutAnimation(anim);
+      }
+      if (!animate){ LinearLayout layout = v.findViewById(R.id.corelayout);
+          final Animation fadein =AnimationUtils.loadAnimation(getActivity(),R.anim.fadeinfast);
+          layout.startAnimation(fadein);
+      }
+
+
+
+
 
 
        // final Animation animation5 =AnimationUtils.loadAnimation(getActivity(),R.anim.lefttoright);
@@ -203,6 +241,10 @@ public class CoreFragment extends Fragment {
         return v;
     }
 
+    private void animatelayout() {
+
+
+    }
 
 
     // TODO: Rename method, update argument and hook method into UI event

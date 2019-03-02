@@ -1,6 +1,8 @@
 package com.dragar.luka.offbikeworkouts;
 
+import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.AutomaticZenRule;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -45,14 +47,24 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
         getFragmentManager().beginTransaction().replace(android.R.id.content, new MainPreferenceFragment()).commit();
 
 
+        // ATTENTION: This was auto-generated to handle app links.
+        Intent appLinkIntent = getIntent();
+        String appLinkAction = appLinkIntent.getAction();
+        Uri appLinkData = appLinkIntent.getData();
     }
 
     public static class MainPreferenceFragment extends PreferenceFragment {
+
         @Override
         public void onCreate(final Bundle savedInstanceState) {
 
+
+
+
             super.onCreate(savedInstanceState);
             addPreferencesFromResource(R.xml.pref_main);
+
+
 
             // gallery EditText change listener
             bindPreferenceSummaryToValue(findPreference(getString(R.string.key_gallery_name)));
@@ -71,11 +83,20 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
                 }
             });
 
-            Preference myPref2 = findPreference("speak");
+            final Preference myPref2 = findPreference("speak");
+
             myPref2.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
                 public boolean onPreferenceClick(Preference preference) {
 
                     Speak(getActivity());
+                    //myPref2.setEnabled(false);
+
+
+
+
+
+
+
                     return true;
                 }
             });
@@ -97,6 +118,7 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
                 }
             });
         }
+
     }
 
     @Override
@@ -194,6 +216,8 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
     }
     public static void Speak(final Context context) {
 
+
+
         class Waiter extends AsyncTask<Void,Void,Void> {
             @Override
             protected Void doInBackground(Void... voids) {
@@ -208,6 +232,7 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
 
                 final AlertDialog.Builder builder = new AlertDialog.Builder(context);
                 builder.setTitle("Did you hear me?");
+
 
                 builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
@@ -229,9 +254,16 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
                 });
                 AlertDialog dialog = builder.create();
                 dialog.show();
+
+
+
+
+
                 // Log.d("MainActivity", "TTS finished");
                 //TTS has finished speaking. WRITE YOUR CODE HERE
             }
+
+
         }
 
         textToSpeechSystem = new TextToSpeech(context, new TextToSpeech.OnInitListener() {
@@ -252,6 +284,8 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
 
     }
 
+
+
     public static void openset(Context context) {
        Intent intent = new Intent();
         intent.setAction("com.android.settings.TTS_SETTINGS");
@@ -266,6 +300,9 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
         context.startActivity(intent);
 
     }
+
+
+
 
 
 }

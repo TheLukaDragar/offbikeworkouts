@@ -15,10 +15,23 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".SettingsActivity">
+            <tools:validation testUrl="https://offbikeworkouts.page.link/JOIN" />
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https"
+                    android:host="offbikeworkouts.page.link"
+                    android:path="/JOIN" />
             </intent-filter>
 
         </activity>
@@ -130,7 +143,6 @@
         </activity>
         <activity android:name=".view.OverviewActivity4" />
         <activity android:name=".view.OverviewActivity5" />
-        <activity android:name=".AppCompatPreferenceActivity" />
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"

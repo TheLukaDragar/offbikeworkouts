@@ -9,8 +9,12 @@ import android.os.Handler;
 import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -28,7 +32,7 @@ import com.google.android.gms.ads.MobileAds;
 import com.google.firebase.analytics.FirebaseAnalytics;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity  {
     private static final String TAG = "MainActivity";
     public boolean isFirstStart;
     public ActionBar toolbar1;
@@ -84,6 +88,8 @@ public class MainActivity extends AppCompatActivity {
         toolbar1 = getSupportActionBar();
 
 
+
+
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
@@ -137,7 +143,60 @@ public class MainActivity extends AppCompatActivity {
         //    }
        // });
        // t.start();
+
+        ViewPager pager = (ViewPager) findViewById(R.id.viewPager);
+        pager.setAdapter(new MyPagerAdapter(getSupportFragmentManager()));
+
     }
+
+    private class MyPagerAdapter extends FragmentPagerAdapter {
+
+        public MyPagerAdapter(FragmentManager fm) {
+            super(fm);
+        }
+
+        @Override
+        public Fragment getItem(int pos) {
+            switch (pos) {
+
+                case 0:
+                    return CoreFragment.newInstance("CoreFragment, Instance 1");
+                case 1:
+                    return StrechFragment.newInstance("StrechFragment, Instance 1");
+                case 2:
+                    return HitFragment.newInstance("HitFragment, Instance 1");
+                case 3:
+                    return ProfileFragment.newInstance("HitFragment, Instance 2");
+                default:
+                    return CoreFragment.newInstance("HitFragment, Default");
+            }
+        }
+
+        @Override
+        public int getCount() {
+            return 4;
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+
+            switch (position) {
+                case 0:
+                    return "Title 1";
+                case 1:
+                    return "Title 2";
+                case 2:
+                    return "Title 2";
+                case 3:
+                    return "Title 2";
+                default:
+                    return "null";
+            }
+
+        }
+
+    }
+
 
     private void startads() {
         mInterstitialAd = new InterstitialAd(this);

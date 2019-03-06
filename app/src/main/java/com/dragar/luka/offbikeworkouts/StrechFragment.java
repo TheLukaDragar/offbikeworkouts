@@ -75,6 +75,17 @@ public class StrechFragment extends Fragment {
         return fragment;
     }
 
+    public static StrechFragment newInstance(String text) {
+
+        StrechFragment f = new StrechFragment();
+        Bundle b = new Bundle();
+        b.putString("msg", text);
+
+        f.setArguments(b);
+
+        return f;
+    }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

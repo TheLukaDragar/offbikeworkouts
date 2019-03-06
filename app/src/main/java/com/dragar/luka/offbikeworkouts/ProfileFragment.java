@@ -67,6 +67,16 @@ public class ProfileFragment extends Fragment {
         fragment.setArguments(args);
         return fragment;
     }
+    public static ProfileFragment newInstance(String text) {
+
+       ProfileFragment f = new ProfileFragment();
+        Bundle b = new Bundle();
+        b.putString("msg", text);
+
+        f.setArguments(b);
+
+        return f;
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

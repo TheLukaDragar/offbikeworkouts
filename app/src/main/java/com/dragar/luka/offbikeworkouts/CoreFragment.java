@@ -6,6 +6,7 @@ import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
@@ -25,6 +26,8 @@ import com.dragar.luka.offbikeworkouts.view.OverviewActivity3;
 import com.dragar.luka.offbikeworkouts.view.OverviewActivity4;
 import com.dragar.luka.offbikeworkouts.view.OverviewActivity5;
 import com.google.firebase.analytics.FirebaseAnalytics;
+
+import java.nio.charset.CodingErrorAction;
 
 
 /**
@@ -74,6 +77,17 @@ public class CoreFragment extends Fragment {
         return fragment;
     }
 
+    public static CoreFragment newInstance(String text) {
+
+        CoreFragment f = new CoreFragment();
+        Bundle b = new Bundle();
+        b.putString("msg", text);
+
+        f.setArguments(b);
+
+        return f;
+    }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -95,6 +109,7 @@ public class CoreFragment extends Fragment {
 
 
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(getActivity());
+
 
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
         boolean animate;
@@ -129,6 +144,8 @@ public class CoreFragment extends Fragment {
        // scroll.scrollTo(0, scroll.getBottom());
         //sroll.scrollTo(10, 0);
         //sroll.startAnimation(animation5);
+      //  BottomNavigationView bottomNavigationView = (BottomNavigationView) v.findViewById(R.id.navigation);
+        //bottomNavigationView.setSelectedItemId(R.id.navigation_shop);
 
         final CardView card_view = v.findViewById(R.id.card_view);
         card_view.setRadius(20);

@@ -144,7 +144,12 @@ public class MainActivity extends AppCompatActivity  {
        // });
        // t.start();
 
-        ViewPager pager = (ViewPager) findViewById(R.id.viewPager);
+        ViewPager pager = findViewById(R.id.viewPager);
+        TabLayout tabs = (TabLayout) findViewById(R.id.tabLayout);
+
+       tabs.setupWithViewPager(pager);
+
+
         pager.setAdapter(new MyPagerAdapter(getSupportFragmentManager()));
 
     }
@@ -177,23 +182,8 @@ public class MainActivity extends AppCompatActivity  {
             return 4;
         }
 
-        @Override
-        public CharSequence getPageTitle(int position) {
 
-            switch (position) {
-                case 0:
-                    return "Title 1";
-                case 1:
-                    return "Title 2";
-                case 2:
-                    return "Title 2";
-                case 3:
-                    return "Title 2";
-                default:
-                    return "null";
-            }
 
-        }
 
     }
 
@@ -286,7 +276,7 @@ public class MainActivity extends AppCompatActivity  {
     private void loadFragment(Fragment fragment) {
         // load fragment
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.frame_container, fragment);
+       // transaction.replace(R.id.frame_container, fragment);
         transaction.addToBackStack(null);
         transaction.commit();
 

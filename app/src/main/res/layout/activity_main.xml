@@ -15,19 +15,6 @@
         android:id="@+id/toolbar"
         layout="@layout/toolbar" />
 
-    <android.support.design.widget.BottomNavigationView
-        android:id="@+id/navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:background="@color/backdark"
-        android:foreground="?attr/selectableItemBackground"
-        app:itemBackground="@color/backdark"
-        app:itemIconTint="@color/green"
-        app:itemTextColor="@android:color/white"
-        app:menu="@menu/navigatio" >
-
-    </android.support.design.widget.BottomNavigationView>
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appBarLayout"
@@ -41,17 +28,53 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:tabGravity="fill"
+
+
+            app:tabIconTint="@color/green"
+            app:tabIconTintMode="src_in"
+            app:tabIndicatorColor="@color/green"
             app:tabMode="fixed"
+            app:tabTextColor="@color/green">
 
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabItem5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/coreicon"
+                app:tint="@color/green"
+                app:tintMode="src_in" />
 
-            />
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabItem4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tab5"
+                app:tint="@color/green" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabItem3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tab4"
+                app:tint="@color/green"
+                app:tintMode="add" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tab2" />
+
+        </android.support.design.widget.TabLayout>
 
     </android.support.design.widget.AppBarLayout>
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:isScrollContainer="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
 
 </android.support.design.widget.CoordinatorLayout>

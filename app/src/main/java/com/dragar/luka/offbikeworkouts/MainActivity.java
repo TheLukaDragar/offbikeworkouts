@@ -9,10 +9,12 @@ import android.os.Handler;
 import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.design.widget.TabItem;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
@@ -90,15 +92,15 @@ public class MainActivity extends AppCompatActivity  {
 
 
 
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
-        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+       // BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+       // navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
         //navigation.setSelectedItemId(R.id.navigation_shop);
 
 
-        toolbar1.setTitle("Core");
+       // toolbar1.setTitle("Core");
 
-        loadFragment(new CoreFragment());
+        //loadFragment(new CoreFragment());
 
 
 
@@ -145,42 +147,110 @@ public class MainActivity extends AppCompatActivity  {
        // t.start();
 
         ViewPager pager = findViewById(R.id.viewPager);
-        TabLayout tabs = (TabLayout) findViewById(R.id.tabLayout);
+        TabLayout tabs = findViewById(R.id.tabLayout);
+        //TabItem item1 = findViewById(R.id.tabItem);
 
-       tabs.setupWithViewPager(pager);
+
+
 
 
         pager.setAdapter(new MyPagerAdapter(getSupportFragmentManager()));
+       pager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {}
+
+            @Override
+            public void onPageSelected(int position) {
+                switch (position) {
+                    case 0:
+                        toolbar1.setTitle("Core");
+                        break;
+                    case 1:
+                        toolbar1.setTitle("Stretching");
+                        break;
+                    case 2:
+                        toolbar1.setTitle("HIT");
+                        break;
+                    case 3:
+                        toolbar1.setTitle("Support");
+                        break;
+                }
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {}
+        });
+
+        tabs.setupWithViewPager(pager);
+        int[] icons = {
+                R.drawable.pushupp,
+                R.drawable.coree,
+                R.drawable.squatt,
+                R.drawable.hartt
+        };
+
+        for (int i = 0; i < tabs.getTabCount(); i++) {
+            tabs.getTabAt(i).setIcon(icons[i]);
+        }
+      //      <android.support.design.widget.BottomNavigationView
+       // android:id="@+id/navigation"
+       // android:layout_width="match_parent"
+       // android:layout_height="wrap_content"
+       // android:layout_gravity="bottom"
+       // android:background="@color/backdark"
+      //  android:foreground="?attr/selectableItemBackground"
+       // app:itemBackground="@color/backdark"
+       // app:itemIconTint="@color/green"
+       // app:itemTextColor="@android:color/white"
+       // app:menu="@menu/navigatio" >
+   // </android.support.design.widget.BottomNavigationView>
+
 
     }
 
-    private class MyPagerAdapter extends FragmentPagerAdapter {
+    private class MyPagerAdapter extends FragmentStatePagerAdapter {
+
+        private String[] tabTitles = new String[]{"Tab1", "Tab2", "Tab3", "Tab4"};
+
 
         public MyPagerAdapter(FragmentManager fm) {
             super(fm);
         }
 
         @Override
-        public Fragment getItem(int pos) {
-            switch (pos) {
+        public CharSequence getPageTitle(int position) {
+            return null;
+            //tabTitles[position];
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            switch (position) {
 
                 case 0:
-                    return CoreFragment.newInstance("CoreFragment, Instance 1");
+                    //toolbar1.setTitle("Core");
+                    return new CoreFragment();
                 case 1:
-                    return StrechFragment.newInstance("StrechFragment, Instance 1");
+                   // toolbar1.setTitle("Stretching");
+                    return new StrechFragment();
                 case 2:
-                    return HitFragment.newInstance("HitFragment, Instance 1");
+                   // toolbar1.setTitle("Hit");
+                    return new HitFragment();
                 case 3:
-                    return ProfileFragment.newInstance("HitFragment, Instance 2");
+                   // toolbar1.setTitle("Support");
+                    return new ProfileFragment();
                 default:
-                    return CoreFragment.newInstance("HitFragment, Default");
+                    return null; // shouldn't happen
             }
         }
 
         @Override
         public int getCount() {
-            return 4;
+            return tabTitles.length;
+            //return 4;
         }
+
+
 
 
 
@@ -296,14 +366,14 @@ public class MainActivity extends AppCompatActivity  {
 
 
 
-        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.navigation);
+       // BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.navigation);
 
-        int seletedItemId = bottomNavigationView.getSelectedItemId();
-        if (R.id.navigation_shop != seletedItemId) {
-            setHomeItem(MainActivity.this);
-        } else {
-            if (doubleBackToExitPressedOnce) {
-                finish();
+       // int seletedItemId = bottomNavigationView.getSelectedItemId();
+      //  if (R.id.navigation_shop != seletedItemId) {
+       //     setHomeItem(MainActivity.this);
+       // } else {
+        if (doubleBackToExitPressedOnce) {
+               finish();
                 return;
             }
 
@@ -318,20 +388,20 @@ public class MainActivity extends AppCompatActivity  {
                 }
             }, 2000);
         }
-    }
+  //  }
 
-    public static void setHomeItem(Activity activity) {
-        BottomNavigationView bottomNavigationView = (BottomNavigationView)
-                activity.findViewById(R.id.navigation);
-        bottomNavigationView.setSelectedItemId(R.id.navigation_shop);
-
-
-
+   // public static void setHomeItem(Activity activity) {
+    //    BottomNavigationView bottomNavigationView = (BottomNavigationView)
+      //          activity.findViewById(R.id.navigation);
+      //  bottomNavigationView.setSelectedItemId(R.id.navigation_shop);
+//
 
 
 
 
-    }
+
+
+  //  }
 
     private void ref() {
 
